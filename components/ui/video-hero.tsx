@@ -75,7 +75,7 @@ export default function VideoHero({
   }, [mounted]);
 
   return (
-    <section ref={root} className={cn("relative isolate -mt-[4.75rem] overflow-hidden bg-ink pt-[4.75rem] text-white", className)}>
+    <section ref={root} className={cn("relative isolate -mt-16 overflow-hidden bg-ink pt-16 text-white", className)}>
       {/* background: poster (LCP) + optional video */}
       <div className="absolute inset-0 -z-10" aria-hidden>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -112,7 +112,7 @@ export default function VideoHero({
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/70 to-transparent" />
       </div>
 
-      <div className="container-x relative flex min-h-[calc(86svh-4.75rem)] flex-col justify-center py-14 lg:py-20">
+      <div className="container-x relative flex min-h-[calc(86svh-4rem)] flex-col justify-center py-14 lg:py-20">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">{children}</div>
       </div>
 

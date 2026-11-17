@@ -4,22 +4,29 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { nav } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 export type NavCategory = { href: string; title: string; text: string; img: string };
 
 const isActive = (pathname: string, href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
-/** Desktop navigation: active-page pill + "Cars" drop-down (opens on hover and keyboard focus, no JS needed) */
-export default function NavLinks({ categories }: { categories: NavCategory[] }) {
+/**
+ * Desktop navigation (right-aligned): current page underlined in coral, "Cars" drop-down
+ * that opens on hover and keyboard focus. `onDark` = header is transparent over the dark home-page video.
+ */
+export default function NavLinks({ categories, onDark }: { categories: NavCategory[]; onDark: boolean }) {
   const pathname = usePathname();
   return (
     <nav aria-label="Main" className="hidden lg:block">
-      <ul className="flex items-center gap-0.5 rounded-full bg-surface/80 p-1">
+      <ul className="flex items-center gap-1">
         {nav.map((n) => {
           const active = isActive(pathname, n.href);
-          const cls = `flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-            active ? "bg-white text-brand-700 shadow-card" : "text-ink/75 hover:bg-white/70 hover:text-ink"
-          }`;
+          const cls = cn(
+            "relative flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-semibold transition-colors",
+            "after:absolute after:inset-x-3.5 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-brand-500 after:transition-transform",
+            active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100",
+            onDark ? (active ? "text-white" : "text-white/80 hover:text-white") : active ? "text-brand-700" : "text-ink/75 hover:text-ink",
+          );
           if (n.href !== "/cars/")
             return (
               <li key={n.href}>
@@ -34,9 +41,9 @@ export default function NavLinks({ categories }: { categories: NavCategory[] }) 
                 {n.label}
                 <ChevronDown className="size-3.5 transition-transform group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden />
               </Link>
-              {/* drop-down */}
-              <div className="invisible absolute top-full left-1/2 z-50 w-[30rem] -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-                <div className="rounded-3xl border border-line bg-white p-3 shadow-lift">
+              {/* drop-down (aligned left so it never runs off the screen edge) */}
+              <div className="invisible absolute top-full left-0 z-50 w-[30rem] pt-3 opacity-0 transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                <div className="rounded-3xl border border-line bg-white p-3 text-ink shadow-lift">
                   <ul className="grid grid-cols-2 gap-2">
                     {categories.map((c) => (
                       <li key={c.href}>

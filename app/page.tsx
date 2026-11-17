@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Phone, Plane, ShieldCheck, Sparkles, Star, Truck, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Phone, Plane, ShieldCheck, Sparkles, Truck, Wrench } from "lucide-react";
 import { cars, carsInCategory, categories, cheapestDay, getCar, type Car } from "@/lib/cars";
 import { locations, locationPath } from "@/lib/locations";
 import { faqs } from "@/content/faqs";
@@ -92,20 +92,7 @@ export default function Home() {
           </>
         }
       >
-        <a
-          href={site.mapsUrl}
-          target="_blank"
-          rel="noopener"
-          className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white"
-        >
-          <span className="flex text-brand-300" aria-hidden>
-            {Array.from({ length: 5 }, (_, i) => (
-              <Star key={i} className="size-3.5 fill-current" />
-            ))}
-          </span>
-          {site.googleRating} on Google · Garhoud, Dubai
-        </a>
-        <h1 className="mt-6 text-[2.6rem] leading-[1.02] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
+        <h1 className="text-[2.6rem] leading-[1.02] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
           Rent a car in Dubai,{" "}
           <span className="relative inline-block text-brand-300">
             delivered to you
