@@ -1,0 +1,15 @@
+// Cloudflare Workers config: serve the static Next.js export (./out) – no server code, no OpenNext.
+// Build command (Cloudflare dashboard): npm run build   ·   Deploy command: npx wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // must match the Worker name shown in the Cloudflare dashboard
+  "name": "aldy-ae",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    // /cars/ → out/cars/index.html, /cars → 307 to /cars/ (matches trailingSlash: true)
+    "html_handling": "auto-trailing-slash",
+    // unknown URLs show out/404.html with a 404 status
+    "not_found_handling": "404-page"
+  }
+}
