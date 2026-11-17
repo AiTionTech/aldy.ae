@@ -17,7 +17,7 @@ import { useEffect, useRef, useState } from "react";
 import { Pause, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export type MotionPhoto = { src: string; w: number; h: number };
+export type MotionPhoto = { src: string; w: number; h: number; /** optional small (≈200 px) version used for the hero wall on phones */ small?: string };
 
 type Gsap = typeof import("gsap").gsap;
 type ScrollTriggerT = typeof import("gsap/ScrollTrigger").ScrollTrigger;
@@ -124,6 +124,9 @@ export function MosaicHero({ columns, children, footer, className }: { columns: 
                           <img
                             key={p.src + copy}
                             src={p.src}
+                            srcSet={p.small ? `${p.small} 200w, ${p.src} 600w` : undefined}
+                            sizes={p.small ? "(min-width: 1024px) 300px, 110px" : undefined}
+                            fetchPriority="low"
                             alt=""
                             width={p.w}
                             height={p.h}
@@ -309,10 +312,11 @@ export function Reveal({ children, className, as: Tag = "div" }: { children: Rea
         // skip if already past (no flash of hidden cards) or reduced motion
         if (reduce || (root.current && root.current.getBoundingClientRect().top < innerHeight * 0.82)) return;
         const select = gsap.utils.selector(root);
-        gsap
+        const tl = gsap
           .timeline({ defaults: { duration: 0.55, ease: "power3.out" }, scrollTrigger: { trigger: root.current, start: "top 82%", once: true } })
-          .fromTo(select("[data-reveal]"), { opacity: 0.3, x: wide ? 28 : 12 }, { opacity: 1, x: 0, stagger: 0.13 }, 0)
-          .fromTo(select("[data-reveal-icon]"), { scale: 0.55 }, { scale: 1, stagger: 0.13, ease: "back.out(1.5)" }, 0.08);
+          .fromTo(select("[data-reveal]"), { opacity: 0.3, x: wide ? 28 : 12 }, { opacity: 1, x: 0, stagger: 0.13 }, 0);
+        const icons = select("[data-reveal-icon]");
+        if (icons.length) tl.fromTo(icons, { scale: 0.55 }, { scale: 1, stagger: 0.13, ease: "back.out(1.5)" }, 0.08);
       });
       return () => mm.revert();
   });

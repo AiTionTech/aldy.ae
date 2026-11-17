@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "mp4": "/video/hero-1280.mp4",
+    "mp4Mobile": "/video/hero-720.mp4",
+    "poster": "/video/hero-poster.webp",
+    "posterSmall": "/video/hero-poster-800.webp",
+    "w": 1600,
+    "h": 900,
+    "source": "Montage of Rolls-Royce photos from the aldy.ae media library (scripts/make-montage.mjs)",
+    "licence": "Aldy Rent A Car website images",
+    "trimmed": {
+      "start": 0,
+      "duration": 17.6
+    }
+  }
+}

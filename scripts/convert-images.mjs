@@ -38,7 +38,7 @@ async function convert(src, dest, { width = 1600, quality = 80, thumb = true } =
   return { w: out.width, h: out.height, kb: Math.round(out.size / 1024) };
 }
 
-const manifest = { cars: {}, blog: {}, hero: null };
+const manifest = { cars: {}, blog: {}, hero: null, team: {} };
 let total = 0;
 
 for (const car of cars.filter((c) => c.status === "active")) {
@@ -89,6 +89,24 @@ for (const [slug, rel] of Object.entries(BLOG)) {
   await sharp(cut).resize({ width: 640 }).webp({ quality: 78, alphaQuality: 85 }).toFile(path.join(OUT, "hero-phantom-640.webp"));
   manifest.hero = { src: "/images/hero-phantom.webp", thumb: "/images/hero-phantom-640.webp", w: out.width, h: out.height };
   console.log(`hero cut-out ${out.width}x${out.height} ${Math.round(out.size / 1024)} KB`);
+}
+
+// Team portraits for /about/: team_photos/<slug>.(jpg|jpeg|png|webp) → square crop around the face
+
+{
+  const dir = path.join(ROOT, "team_photos");
+  const files = await fs.readdir(dir).catch(() => []);
+  for (const file of files.filter((f) => /\.(jpe?g|png|webp)$/i.test(f))) {
+    const slug = path.basename(file, path.extname(file)).toLowerCase();
+    const src = path.join(dir, file);
+    await fs.mkdir(path.join(OUT, "team"), { recursive: true });
+    // "attention" focuses the crop on the most interesting region (usually the face)
+    const square = (size) => sharp(src).rotate().resize(size, size, { fit: "cover", position: sharp.strategy.attention });
+    await square(800).webp({ quality: 80 }).toFile(path.join(OUT, "team", `${slug}.webp`));
+    await square(400).webp({ quality: 78 }).toFile(path.join(OUT, "team", `${slug}-400.webp`));
+    manifest.team[slug] = { src: `/images/team/${slug}.webp`, thumb: `/images/team/${slug}-400.webp`, w: 800, h: 800 };
+    console.log(`team: ${slug}`);
+  }
 }
 
 // Logo (black wordmark, transparent) + favicon / icons

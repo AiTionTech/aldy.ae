@@ -44,3 +44,5 @@ next-env.d.ts
 *.sql
 /aldy_uploads/
 /aldy_theme_assets/
+/hero_source/
+/team_photos/

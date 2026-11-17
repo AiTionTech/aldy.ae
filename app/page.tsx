@@ -1,17 +1,22 @@
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, CalendarRange, Car as CarIcon, Clock, MapPin, ShieldCheck, Sparkles, Star, Truck, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Phone, Plane, ShieldCheck, Sparkles, Star, Truck, Wrench } from "lucide-react";
 import { cars, carsInCategory, categories, cheapestDay, getCar, type Car } from "@/lib/cars";
 import { locations, locationPath } from "@/lib/locations";
 import { faqs } from "@/content/faqs";
 import { formatAED } from "@/lib/format";
 import { pageMeta } from "@/lib/seo";
-import manifest from "@/data/image-manifest.json";
+import videoManifest from "@/data/video-manifest.json";
+import { posts } from "@/content/blog";
+import { reviews } from "@/content/testimonials";
 import { businessSchema } from "@/lib/schema";
 import { site, waLink } from "@/lib/site";
 import FaqList from "@/components/FaqList";
 import QuickSearch from "@/components/QuickSearch";
-import { CarLanes, MosaicHero, Reveal, type LaneCar } from "@/components/ui/car-motion";
-import { Dunes, Squiggle, SunDot } from "@/components/Decor";
+import { CarLanes, Reveal, type LaneCar } from "@/components/ui/car-motion";
+import VideoHero, { type HeroPoster, type HeroVideo } from "@/components/ui/video-hero";
+import Testimonials from "@/components/Testimonials";
+import BlogCard from "@/components/BlogCard";
+import { Dunes, Squiggle } from "@/components/Decor";
 import { JsonLd, SectionHeading } from "@/components/common";
 import { WhatsAppIcon } from "@/components/icons";
 
@@ -40,13 +45,22 @@ const plans = [
   { Icon: BadgeCheck, tag: "3 months +", title: "Long term", text: "An affordable alternative to buying, with servicing, maintenance and 24/7 support included.", bg: "bg-surface", icon: "bg-white text-brand-600" },
 ];
 
+const audiences = [
+  { Icon: Plane, title: "Visitors & tourists", text: "Landing at DXB or Sharjah? Drive straight from the airport with your home licence or IDP.", href: "/cars/economy/", cta: "Economy cars" },
+  { Icon: House, title: "Residents", text: "Monthly and long-term rentals cost far less per day – an easy alternative to buying.", href: "/cars/", cta: "Monthly prices" },
+  { Icon: Briefcase, title: "Business & corporate", text: "Mercedes-Benz, Tesla and SUVs for client meetings, visiting teams and company use.", href: "/cars/mercedes-benz-c300/", cta: "Executive cars" },
+  { Icon: Gem, title: "Weddings & events", text: "Rolls-Royce Phantom, Ghost and Cullinan for weddings, VIP guests and photo shoots.", href: "/cars/luxury/", cta: "Luxury cars" },
+];
+
 export default function Home() {
-  // photo wall: real on-location photos (the Rolls-Royce studio cut-outs would look out of place)
-  const wall = ["mazda-cx30", "tesla-model-3-long-range", "toyota-land-cruiser", "mercedes-benz-c300", "jac-j7-red", "mitsubishi-xpander", "nissan-sunny", "jac-j7", "toyota-corolla", "mitsubishi-attrage", "jac-j7-black", "mg5"]
-    .map((slug) => (manifest.cars as Record<string, { thumb: string; w: number; h: number }[]>)[slug]?.[0])
-    .filter((p) => p != null)
-    .map((p) => ({ src: p.thumb, w: 600, h: Math.round((600 * p.h) / p.w) }));
-  const mosaic = [wall.slice(0, 4), wall.slice(4, 8), wall.slice(8, 12)];
+  // hero background: stock/Aldy video once added (npm run video), otherwise an on-location car photo
+  const heroCar = getCar("toyota-land-cruiser")!.images[0];
+  const hv = videoManifest.hero as { mp4: string; mp4Mobile: string; poster: string; posterSmall: string; w: number; h: number } | null;
+  const heroPoster: HeroPoster = hv
+    ? { src: hv.poster, srcSet: `${hv.posterSmall} 800w, ${hv.poster} ${hv.w}w`, w: hv.w, h: hv.h }
+    : { src: heroCar.src, srcSet: `${heroCar.thumb} 600w, ${heroCar.md} 1000w, ${heroCar.src} ${heroCar.w}w`, w: heroCar.w, h: heroCar.h };
+  const heroVideo: HeroVideo | undefined = hv ? { mp4: hv.mp4, mp4Mobile: hv.mp4Mobile } : undefined;
+  const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
   const lane = (c: Car): LaneCar => ({
     slug: c.slug,
     name: c.name,
@@ -65,52 +79,61 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO – tilted photo wall that straightens as you scroll (components/ui/car-motion.tsx) */}
-      <MosaicHero
-        columns={mosaic}
+      {/* HERO – background video under a dark overlay (idea from alfareedbm.com; components/ui/video-hero.tsx) */}
+      <VideoHero
+        poster={heroPoster}
+        video={heroVideo}
         footer={
           <>
-            <div className="container-x relative z-10 pt-2 pb-4">
+            <div className="container-x relative z-10 -mt-6 pb-4 text-ink">
               <QuickSearch />
             </div>
-            <Dunes className="-mt-10" />
+            <Dunes className="-mt-12" />
           </>
         }
       >
-        <a href={site.mapsUrl} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-xs font-semibold shadow-card">
-          <span className="flex text-brand-500" aria-hidden>
+        <a
+          href={site.mapsUrl}
+          target="_blank"
+          rel="noopener"
+          className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white"
+        >
+          <span className="flex text-brand-300" aria-hidden>
             {Array.from({ length: 5 }, (_, i) => (
               <Star key={i} className="size-3.5 fill-current" />
             ))}
           </span>
-          {site.googleRating} rating on Google
+          {site.googleRating} on Google · Garhoud, Dubai
         </a>
         <h1 className="mt-6 text-[2.6rem] leading-[1.02] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
           Rent a car in Dubai,{" "}
-          <span className="relative inline-block text-brand-600">
+          <span className="relative inline-block text-brand-300">
             delivered to you
             <Squiggle />
           </span>
         </h1>
-        <p className="mt-6 max-w-lg text-lg leading-8 text-muted">
+        <ul className="mt-7 flex flex-wrap justify-center gap-2">
+          {["24-hour delivery", `${locations.length} delivery areas`, "Insurance included", "Pay on delivery"].map((t) => (
+            <li key={t} className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-sm font-medium">
+              <Check className="size-4 text-brand-300" aria-hidden /> {t}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
           From the {formatAED(cheapestDay())}-a-day Attrage to the Rolls-Royce Phantom. Pick your car and dates, send them in one WhatsApp tap, and we bring the keys to your door.
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link href="/cars/" className="btn-primary px-6 py-3.5">
             Browse {cars.length} cars <ArrowRight className="size-4" aria-hidden />
           </Link>
           <a href={waLink("Hello Aldy Rent A Car, I would like to rent a car.")} target="_blank" rel="noopener" className="btn-wa px-6 py-3.5">
-            <WhatsAppIcon className="size-4" /> Chat with us
+            <WhatsAppIcon className="size-4" /> Chat on WhatsApp
+          </a>
+          <a href={site.phoneHref} className="btn border border-white/40 px-6 py-3.5 text-white hover:bg-white/10">
+            <Phone className="size-4" aria-hidden /> Call us
           </a>
         </div>
-        <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink/80">
-          {["24-hour delivery", `${locations.length} delivery areas`, "Pay on delivery"].map((t) => (
-            <li key={t} className="flex items-center gap-2">
-              <SunDot /> {t}
-            </li>
-          ))}
-        </ul>
-      </MosaicHero>
+      </VideoHero>
 
       {/* CATEGORIES */}
       <section className="bg-surface pt-4 pb-20">
@@ -164,6 +187,30 @@ export default function Home() {
         <CarLanes rows={laneRows} className="mt-6" />
       </section>
 
+      {/* WHO WE RENT TO (idea from alfareedbm.com "Industries we serve") */}
+      <section className="container-x mt-24">
+        <SectionHeading eyebrow="Who we rent to" title="A car for every reason to be in Dubai" />
+        <Reveal as="ul" className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {audiences.map(({ Icon, title, text, href, cta }, i) => (
+            <li key={title} data-reveal className="group relative flex flex-col rounded-3xl border border-line bg-white p-6 shadow-card transition-shadow hover:shadow-lift">
+              <div className="flex items-center justify-between">
+                <span data-reveal-icon className={`grid size-12 place-items-center rounded-2xl ${i % 2 ? "bg-sea-50 text-sea-600" : "bg-brand-50 text-brand-600"}`}>
+                  <Icon className="size-5" aria-hidden />
+                </span>
+                <span className="font-display text-3xl font-extrabold text-brand-500" aria-hidden>
+                  0{i + 1}
+                </span>
+              </div>
+              <h3 className="mt-5 text-lg font-bold">{title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-6 text-muted">{text}</p>
+              <Link href={href} className="mt-4 text-sm font-semibold text-brand-600 after:absolute after:inset-0 group-hover:text-brand-700">
+                {cta} →
+              </Link>
+            </li>
+          ))}
+        </Reveal>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="relative mt-24 overflow-hidden bg-sea-50 py-20">
         <div className="bg-sun absolute -top-40 -right-40 size-[28rem] rounded-full opacity-60" aria-hidden />
@@ -213,6 +260,9 @@ export default function Home() {
           ))}
         </Reveal>
       </section>
+
+      {/* REVIEWS – real Google reviews only (content/testimonials.ts); hidden until 3+ are added */}
+      <Testimonials reviews={reviews} rating={site.googleRating} reviewsUrl={site.mapsUrl} />
 
       {/* PLANS */}
       <section className="container-x mt-24">
@@ -264,6 +314,26 @@ export default function Home() {
             ))}
           </ul>
         </div>
+      </section>
+
+      {/* FROM THE BLOG (idea from alfareedbm.com "News & Insights") */}
+      <section className="container-x mt-24">
+        <SectionHeading
+          eyebrow="From the blog"
+          title="Tips for driving in the UAE"
+          action={
+            <Link href="/blog/" className="btn-ghost shrink-0">
+              All articles <ArrowRight className="size-4" aria-hidden />
+            </Link>
+          }
+        />
+        <ul className="mt-10 grid gap-6 md:grid-cols-3">
+          {latestPosts.map((p) => (
+            <li key={p.slug}>
+              <BlogCard post={p} headingLevel="h3" />
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* FAQ */}

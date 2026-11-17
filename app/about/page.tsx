@@ -5,6 +5,7 @@ import { locations } from "@/lib/locations";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { PageHeader } from "@/components/common";
+import TeamSection from "@/components/TeamSection";
 
 export const metadata = pageMeta({
   title: "About Aldy Rent A Car – Car Rental Company in Garhoud, Dubai",
@@ -65,6 +66,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      {/* Meet the team – real managers from content/team.ts (hidden until added) */}
+      <TeamSection />
     </>
   );
 }
