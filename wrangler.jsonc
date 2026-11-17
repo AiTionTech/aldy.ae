@@ -3,7 +3,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   // must match the Worker name shown in the Cloudflare dashboard
-  "name": "aldy-ae",
+  "name": "aldy-pages-dev",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./out",
