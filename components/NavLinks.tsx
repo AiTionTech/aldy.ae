@@ -30,11 +30,11 @@ export default function NavLinks({ categories, onDark }: { categories: NavCatego
         <span
           aria-hidden
           className={cn(
-            "pointer-events-none absolute inset-y-0 rounded-full transition-[left,width,opacity] duration-300 ease-out",
+            "pointer-events-none absolute inset-y-0 left-0 rounded-full transition-[transform,width,opacity] duration-300 ease-smooth will-change-transform",
             onDark ? "bg-white/15 ring-1 ring-white/25 ring-inset" : "bg-brand-50 ring-1 ring-brand-100 ring-inset",
             hover ? "opacity-100" : "opacity-0",
           )}
-          style={hover ? { left: hover.left, width: hover.width } : undefined}
+          style={hover ? { transform: `translateX(${hover.left}px)`, width: hover.width } : undefined}
         />
       <ul className="relative flex items-center gap-1">
         {nav.map((n) => {

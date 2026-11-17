@@ -43,6 +43,8 @@ Cloudflare Pages: build command `npm run build`, output folder `out`, Node 20+.
 - (old) Hero image is a transparent cut-out made by `scripts/convert-images.mjs` (CSS blend modes cost ~2 s of main-thread time on mobile)
 - `scripts/flatten-segments.mjs`: Next 16 export writes prefetch payloads as nested folders but the router requests flat `__next.a.b.txt` files → copies them flat so prefetches don't 404
 
+- Design checklist: `.claude/skills/landing-page-design/` (from elayadesign/ai-design-skills, MIT, locked in `skills-lock.json`). Its top "aldy.ae overrides" block lists which rules we skip (fonts, gradients, icons, nav, hero). Adopted: single easing curve `ease-smooth` (also the default transition curve in `@theme`), text-wrap balance/pretty, scale-only font sizes, no extra-bold
+
 ## Still open (ask Aldy)
 1. Mileage rule – site shows "250 km per day" everywhere (`lib/site.ts`)
 2. Rolls-Royce weekly/monthly prices, deposit, min days

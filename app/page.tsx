@@ -84,7 +84,7 @@ export default function Home() {
         video={heroVideo}
         footer={<Dunes className="relative -mt-16" />}
       >
-        <h1 className="text-[2.6rem] leading-[1.02] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
+        <h1 className="text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl">
           Rent a car in Dubai,{" "}
           <span className="relative inline-block text-brand-300">
             delivered to you
@@ -181,7 +181,7 @@ export default function Home() {
                 <span data-reveal-icon className={`grid size-12 place-items-center rounded-2xl ${i % 2 ? "bg-sea-50 text-sea-600" : "bg-brand-50 text-brand-600"}`}>
                   <Icon className="size-5" aria-hidden />
                 </span>
-                <span className="font-display text-3xl font-extrabold text-brand-500" aria-hidden>
+                <span className="font-display text-3xl font-bold text-brand-500" aria-hidden>
                   0{i + 1}
                 </span>
               </div>

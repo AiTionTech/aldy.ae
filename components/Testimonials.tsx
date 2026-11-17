@@ -120,7 +120,7 @@ export default function Testimonials({ reviews, rating, reviewsUrl }: { reviews:
                 <Star key={s} className={`size-4 ${s < r.rating ? "fill-current" : "text-line"}`} aria-hidden />
               ))}
             </div>
-            <blockquote className="mt-4 line-clamp-6 flex-1 text-[15px] leading-7 text-ink/85">“{r.text}”</blockquote>
+            <blockquote className="mt-4 line-clamp-6 flex-1 text-base leading-7 text-ink/85">“{r.text}”</blockquote>
             <div className="mt-6 flex items-center justify-between gap-3 border-t border-line pt-4">
               <div>
                 <p className="font-semibold">{r.name}</p>
