@@ -11,7 +11,6 @@ import { reviews } from "@/content/testimonials";
 import { businessSchema } from "@/lib/schema";
 import { site, waLink } from "@/lib/site";
 import FaqList from "@/components/FaqList";
-import QuickSearch from "@/components/QuickSearch";
 import { CarLanes, Reveal, type LaneCar } from "@/components/ui/car-motion";
 import VideoHero, { type HeroPoster, type HeroVideo } from "@/components/ui/video-hero";
 import Testimonials from "@/components/Testimonials";
@@ -95,15 +94,14 @@ export default function Home() {
         <p className="mt-6 max-w-xl text-lg leading-8 text-white/85">Economy to Rolls-Royce – book in one WhatsApp tap.</p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
           <Link href="/cars/" className="btn-primary px-6 py-3.5">
-            Browse {cars.length} cars <ArrowRight className="size-4" aria-hidden />
+            Browse Cars <ArrowRight className="size-4" aria-hidden />
           </Link>
           <a href={waLink("Hello Aldy Rent A Car, I would like to rent a car.")} target="_blank" rel="noopener" className="btn-wa px-6 py-3.5">
             <WhatsAppIcon className="size-4" /> Chat on WhatsApp
           </a>
         </div>
-        <div className="mt-10 w-full max-w-4xl text-left">
-          <QuickSearch dark />
-        </div>
+        {/* keeps the hero the same height it had with the search bar (109 px desktop / 292 px phone) */}
+        <div aria-hidden className="h-[292px] sm:h-[109px]" />
       </VideoHero>
 
       {/* TRUST POINTS – quiet line just below the hero */}
