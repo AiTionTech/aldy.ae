@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { nav } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -11,32 +12,49 @@ export type NavCategory = { href: string; title: string; text: string; img: stri
 const isActive = (pathname: string, href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
 /**
- * Desktop navigation (right-aligned): current page underlined in coral, "Cars" drop-down
- * that opens on hover and keyboard focus. `onDark` = header is transparent over the dark home-page video.
+ * Desktop navigation (right-aligned): current page underlined in coral, a soft pill that slides behind
+ * the hovered/focused link, and a "Cars" drop-down that opens on hover and keyboard focus.
+ * `onDark` = header is transparent over the dark home-page video.
  */
 export default function NavLinks({ categories, onDark }: { categories: NavCategory[]; onDark: boolean }) {
   const pathname = usePathname();
+  // sliding hover highlight: position/width of the hovered link, relative to the wrapper
+  const [hover, setHover] = useState<{ left: number; width: number } | null>(null);
+  const track = (e: React.MouseEvent<HTMLElement> | React.FocusEvent<HTMLElement>) => {
+    const li = e.currentTarget;
+    setHover({ left: li.offsetLeft, width: li.offsetWidth });
+  };
   return (
     <nav aria-label="Main" className="hidden lg:block">
-      <ul className="flex items-center gap-1">
+      <div className="relative" onMouseLeave={() => setHover(null)} onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node) && setHover(null)}>
+        <span
+          aria-hidden
+          className={cn(
+            "pointer-events-none absolute inset-y-0 rounded-full transition-[left,width,opacity] duration-300 ease-out",
+            onDark ? "bg-white/15 ring-1 ring-white/25 ring-inset" : "bg-brand-50 ring-1 ring-brand-100 ring-inset",
+            hover ? "opacity-100" : "opacity-0",
+          )}
+          style={hover ? { left: hover.left, width: hover.width } : undefined}
+        />
+      <ul className="relative flex items-center gap-1">
         {nav.map((n) => {
           const active = isActive(pathname, n.href);
           const cls = cn(
-            "relative flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-semibold transition-colors",
-            "after:absolute after:inset-x-3.5 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-brand-500 after:transition-transform",
-            active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100",
+            "relative flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold transition-[color,transform] duration-200 hover:-translate-y-px",
+            "after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-brand-500 after:transition-transform",
+            active ? "after:scale-x-100" : "after:scale-x-0",
             onDark ? (active ? "text-white" : "text-white/80 hover:text-white") : active ? "text-brand-700" : "text-ink/75 hover:text-ink",
           );
           if (n.href !== "/cars/")
             return (
-              <li key={n.href}>
+              <li key={n.href} onMouseEnter={track} onFocus={track}>
                 <Link href={n.href} className={cls} aria-current={active ? "page" : undefined}>
                   {n.label}
                 </Link>
               </li>
             );
           return (
-            <li key={n.href} className="group relative">
+            <li key={n.href} className="group relative" onMouseEnter={track} onFocus={track}>
               <Link href={n.href} className={cls} aria-current={active ? "page" : undefined}>
                 {n.label}
                 <ChevronDown className="size-3.5 transition-transform group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden />
@@ -69,6 +87,7 @@ export default function NavLinks({ categories, onDark }: { categories: NavCatego
           );
         })}
       </ul>
+      </div>
     </nav>
   );
 }
