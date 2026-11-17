@@ -4,9 +4,10 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import { addDays, todayInDubai } from "@/lib/format";
+import { cn } from "@/lib/utils";
 
 /** Category + dates → /cars/?category=…&from=…&to=… (dates carry through to the car page booking form) */
-export default function QuickSearch() {
+export default function QuickSearch({ dark = false }: { dark?: boolean }) {
   const router = useRouter();
   const [today, setToday] = useState("");
   const [category, setCategory] = useState("");
@@ -32,21 +33,28 @@ export default function QuickSearch() {
   };
 
   return (
-    <form onSubmit={submit} className="rounded-3xl border border-line bg-white p-3 shadow-lift sm:p-4" aria-label="Find a car">
-      <div className="grid gap-3 sm:grid-cols-[1fr_1fr_1fr_auto] sm:items-end">
-        <div>
-          <label htmlFor="qs-cat" className="label">
+    <form onSubmit={submit} aria-label="Find a car" className="w-full">
+      {/* slim search bar: three borderless fields with dividers, button at the end (stacks on phones) */}
+      <div
+        className={cn(
+          "flex flex-col overflow-hidden rounded-3xl border sm:flex-row sm:items-center sm:rounded-full sm:p-1.5",
+          dark ? "border-white/15 bg-ink/55 text-white shadow-lift [color-scheme:dark]" : "border-line bg-white shadow-card",
+        )}
+      >
+        <div className="flex-1 px-5 py-3 sm:py-2">
+          <label htmlFor="qs-cat" className={cn("block text-[11px] font-semibold tracking-wide uppercase", dark ? "text-white/60" : "text-muted")}>
             Car type
           </label>
-          <select id="qs-cat" value={category} onChange={(e) => setCategory(e.target.value)} className="field">
+          <select id="qs-cat" value={category} onChange={(e) => setCategory(e.target.value)} className={cn("mt-0.5 -ml-1 block w-full cursor-pointer bg-transparent text-sm font-medium focus:outline-none", dark ? "text-white [&>option]:text-ink" : "text-ink")}>
             <option value="">All cars</option>
             <option value="economy">Economy</option>
             <option value="luxury">Luxury</option>
           </select>
         </div>
-        <div>
-          <label htmlFor="qs-from" className="label">
-            Pick-up date
+        <span className={cn("mx-5 h-px sm:mx-0 sm:h-8 sm:w-px", dark ? "bg-white/15" : "bg-line")} aria-hidden />
+        <div className="flex-1 px-5 py-3 sm:py-2">
+          <label htmlFor="qs-from" className={cn("block text-[11px] font-semibold tracking-wide uppercase", dark ? "text-white/60" : "text-muted")}>
+            Pick-up
           </label>
           <input
             id="qs-from"
@@ -58,12 +66,13 @@ export default function QuickSearch() {
               setError("");
               if (e.target.value >= to) setTo(addDays(e.target.value, 1));
             }}
-            className="field"
+            className={cn("mt-0.5 block w-full bg-transparent text-sm font-medium focus:outline-none", dark ? "text-white" : "text-ink")}
           />
         </div>
-        <div>
-          <label htmlFor="qs-to" className="label">
-            Drop-off date
+        <span className={cn("mx-5 h-px sm:mx-0 sm:h-8 sm:w-px", dark ? "bg-white/15" : "bg-line")} aria-hidden />
+        <div className="flex-1 px-5 py-3 sm:py-2">
+          <label htmlFor="qs-to" className={cn("block text-[11px] font-semibold tracking-wide uppercase", dark ? "text-white/60" : "text-muted")}>
+            Drop-off
           </label>
           <input
             id="qs-to"
@@ -74,15 +83,17 @@ export default function QuickSearch() {
               setTo(e.target.value);
               setError("");
             }}
-            className="field"
+            className={cn("mt-0.5 block w-full bg-transparent text-sm font-medium focus:outline-none", dark ? "text-white" : "text-ink")}
           />
         </div>
-        <button type="submit" className="btn-brand h-[46px] px-6">
-          <Search className="size-4" aria-hidden /> Find a car
-        </button>
+        <div className="p-3 pt-1 sm:p-0">
+          <button type="submit" className="btn-brand w-full px-6 py-3 sm:w-auto">
+            <Search className="size-4" aria-hidden /> Find a car
+          </button>
+        </div>
       </div>
       {error && (
-        <p role="alert" className="mt-2 px-1 text-sm text-red-700">
+        <p role="alert" className={cn("mt-2 px-4 text-sm", dark ? "text-red-200" : "text-red-700")}>
           {error}
         </p>
       )}

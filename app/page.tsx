@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Phone, Plane, ShieldCheck, Sparkles, Truck, Wrench } from "lucide-react";
+import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Plane, ShieldCheck, Sparkles, Truck, Wrench } from "lucide-react";
 import { cars, carsInCategory, categories, cheapestDay, getCar, type Car } from "@/lib/cars";
 import { locations, locationPath } from "@/lib/locations";
 import { faqs } from "@/content/faqs";
@@ -83,14 +83,7 @@ export default function Home() {
       <VideoHero
         poster={heroPoster}
         video={heroVideo}
-        footer={
-          <>
-            <div className="container-x relative z-10 -mt-6 pb-4 text-ink">
-              <QuickSearch />
-            </div>
-            <Dunes className="-mt-12" />
-          </>
-        }
+        footer={<Dunes className="relative -mt-16" />}
       >
         <h1 className="text-[2.6rem] leading-[1.02] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
           Rent a car in Dubai,{" "}
@@ -99,31 +92,37 @@ export default function Home() {
             <Squiggle />
           </span>
         </h1>
-        <ul className="mt-7 flex flex-wrap justify-center gap-2">
-          {["24-hour delivery", `${locations.length} delivery areas`, "Insurance included", "Pay on delivery"].map((t) => (
-            <li key={t} className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-sm font-medium">
-              <Check className="size-4 text-brand-300" aria-hidden /> {t}
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
-          From the {formatAED(cheapestDay())}-a-day Attrage to the Rolls-Royce Phantom. Pick your car and dates, send them in one WhatsApp tap, and we bring the keys to your door.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <p className="mt-6 max-w-xl text-lg leading-8 text-white/85">Economy to Rolls-Royce – book in one WhatsApp tap.</p>
+        <div className="mt-9 flex flex-wrap justify-center gap-3">
           <Link href="/cars/" className="btn-primary px-6 py-3.5">
             Browse {cars.length} cars <ArrowRight className="size-4" aria-hidden />
           </Link>
           <a href={waLink("Hello Aldy Rent A Car, I would like to rent a car.")} target="_blank" rel="noopener" className="btn-wa px-6 py-3.5">
             <WhatsAppIcon className="size-4" /> Chat on WhatsApp
           </a>
-          <a href={site.phoneHref} className="btn border border-white/40 px-6 py-3.5 text-white hover:bg-white/10">
-            <Phone className="size-4" aria-hidden /> Call us
-          </a>
+        </div>
+        <div className="mt-10 w-full max-w-4xl text-left">
+          <QuickSearch dark />
         </div>
       </VideoHero>
 
+      {/* TRUST POINTS – quiet line just below the hero */}
+      <section className="bg-surface pt-2 pb-12">
+        <div className="container-x">
+          <div className="mx-auto max-w-4xl">
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
+              {["24-hour delivery", `${locations.length} delivery areas`, "Insurance included", "Pay on delivery"].map((t) => (
+                <li key={t} className="flex items-center gap-1.5">
+                  <Check className="size-4 text-brand-600" aria-hidden /> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* CATEGORIES */}
-      <section className="bg-surface pt-4 pb-20">
+      <section className="bg-surface pb-20">
         <div className="container-x grid gap-5 sm:grid-cols-2">
           {[
             { href: "/cars/economy/", title: "Economy & everyday", text: "Sedans, SUVs, Tesla and Mercedes-Benz – for a day or a month.", from: economyFrom, img: getCar("mazda-cx30")!.images[0], contain: false },
