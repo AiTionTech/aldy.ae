@@ -1,0 +1,1081 @@
+[
+  {
+    "slug": "rolls-royce-phantom",
+    "old_slug": "rolls-royce-phantom",
+    "status": "active",
+    "name": "Rolls Royce Phantom",
+    "make": "Rolls-Royce",
+    "model": "Rolls-Royce Phantom",
+    "year": 2023,
+    "old_category": "Luxury Car",
+    "category": "luxury",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": null,
+    "fuel": "10 Km / liter",
+    "price_aed": {
+      "day": 5500.0,
+      "week": null,
+      "month": null
+    },
+    "deposit_aed": 5500.0,
+    "min_days": 1,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "30 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [],
+    "included": [],
+    "luxury_specs": "Power 588 kW / bhp / 571 | 0-100 km/h / 5.3 sec | top speed / km/h 250 | engine / 6.7 l v12 | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "If you’re looking to impress, the Rolls-Royce Phantom EWB ‘Bespoke Edition’ draws the attention of every pedestrian and passerby around. Take that important client to dinner in this ultra-luxury sedan and allow them to be completely impressed with one of the most finely detailed, top-notch interiors ever made. You’re sure to be the talk of the evening after they bask in the comfort of the finest leather, beautiful wood veneer, and advanced technology. If you’re looking for a luxury car that’s sure to impress, the Rolls-Royce Phantom ‘EWB Bespoke Edition’ is the perfect choice.\r\n\nDUBAI ROLLS-ROYCE RENTAL\n\nThe Rolls-Royce Phantom EWB ‘Bespoke Edition’ makes no excuses for its elegant excess. This ultra-luxury sedan has looks that kill and extravagant features many people will never experience. \r\n\nBRING YOURSELF WITH LUXURY FEATURES\n\nThe Rolls-Royce Phantom EWB ‘Bespoke Edition’ has lumbar support and massaging features available in the front seats. If you’re in Dubai to have fun with friends. Your squad will feel like celebrities arriving fashionably late to the club as they emerge from traditional Rolls rear-hinged power doors. Rent Rolls Phantom in Dubai.\r\n\nRESERVE YOUR ROLLS-ROYCE TODAY\n\nAt Aldy Rent a Car in Dubai, you can find the Rolls-Royce Phantom EWB ‘Bespoke Edition’ among the town’s largest fleet of luxury rental cars. A Rolls-Royce screams importance and ultimate sophistication to everyone who sees you behind the wheel. Don’t just dress to impress. Arrive in style. Let us help you make the most memorable Dubai vacation or business trip. Rent Luxury & Sports Cars in Dubai from us! Call Us to reserve your luxury car today.",
+    "images_old": [
+      "wp-content/uploads/2023/02/Phantom-1.png",
+      "wp-content/uploads/2023/02/Phantom-6.png",
+      "wp-content/uploads/2023/02/Phantom-5.png",
+      "wp-content/uploads/2023/02/Phantom-4.png",
+      "wp-content/uploads/2023/02/Phantom-3.png",
+      "wp-content/uploads/2023/02/Phantom-2-scaled.jpg"
+    ],
+    "content_issues": [
+      "Old page title/heading said GHOST – correct name is Phantom",
+      "Spec line copied across all Rolls-Royce pages – verify specs per model; weekly/monthly price, deposit, min days and km were not set (\"Ask for price\")",
+      "Deposit (AED 5,500) and minimum days (1) exist in the old database but were never shown on the site – confirm with Aldy before publishing",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "rolls-royce-cullinan",
+    "old_slug": "rolls-royce-cullinan",
+    "status": "active",
+    "name": "Rolls Royce Cullinan",
+    "make": "Rolls-Royce",
+    "model": "Rolls-Royce CULLINAN",
+    "year": 2021,
+    "old_category": "Luxury Car",
+    "category": "luxury",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": null,
+    "fuel": "10 Km / liter",
+    "price_aed": {
+      "day": 4900.0,
+      "week": null,
+      "month": null
+    },
+    "deposit_aed": 5500.0,
+    "min_days": 1,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [],
+    "included": [],
+    "luxury_specs": "Power 588 kW / bhp / 571 | 0-100 km/h / 5.0 sec | top speed / km/h 250 | engine / 6.75 l v12 | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "The Rolls-Royce Cullinan’s 563-horsepower engine and advanced suspension and road scanning cameras provide for an exhilarating driving experience. This premium SUV rental’s cutting-edge engineering will have you drooling around every bend.\r\n\nRENTING A LUXURIOUS SUV IS A UNIQUE WAY TO TRAVEL IN STYLE\n\nArrive at your destination with a distinct sense of flair and great taste in your Cullinan cabin. Anyone who has rented a Rolls Royce will attest to the exhilaration of seeing the iconic hood ornament proudly emerge from her confinement when the ignition is turned on. Choose the Rolls-Royce Cullinan for your Dubai vacation and ride in style with the “Spirit of Ecstasy.”",
+    "images_old": [
+      "wp-content/uploads/2023/02/Rolls-Royce-Cullinan.png",
+      "wp-content/uploads/2023/02/Cullinan-5.jpg",
+      "wp-content/uploads/2023/02/Cullinan-4.jpg",
+      "wp-content/uploads/2023/02/Cullinan-3.jpg",
+      "wp-content/uploads/2023/02/Cullinan-2.jpg",
+      "wp-content/uploads/2023/02/Cullinan-1.jpg"
+    ],
+    "content_issues": [
+      "Spec line copied across all Rolls-Royce pages – verify specs per model; weekly/monthly price, deposit, min days and km were not set (\"Ask for price\")",
+      "Deposit (AED 5,500) and minimum days (1) exist in the old database but were never shown on the site – confirm with Aldy before publishing",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "rolls-royce-ghost",
+    "old_slug": "rolls-royce-ghost",
+    "status": "active",
+    "name": "Rolls Royce Ghost",
+    "make": "Rolls-Royce",
+    "model": "Rolls-Royce GHOST",
+    "year": 2022,
+    "old_category": "Luxury Car",
+    "category": "luxury",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": null,
+    "fuel": "10 Km / liter",
+    "price_aed": {
+      "day": 4500.0,
+      "week": null,
+      "month": null
+    },
+    "deposit_aed": 5500.0,
+    "min_days": 1,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [],
+    "included": [],
+    "luxury_specs": "Power 588 kW / bhp / 571 | 0-100 km/h / 4.8 sec | top speed / km/h 250 | engine / 6.7 l v12 | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Our Rolls-Royce Ghost rental in Dubai has all the luxurious amenities you’d expect from one of the finest high-end automobile manufacturers in the world. If you want to arrive in style during your next Dubai trip, contact Aldy Rent a Car today to reserve your Rolls-Royce. \r\n\nIndulgent features such as massage seats in the front and back of the Rolls-Royce Ghost are the stuff of dreams for most individuals. Along with a relaxing massage, you will find yourself surrounded by premium leather seats stitched to perfection, along with a rear seat theatre.\r\n\nTAKE A DRIVE IN LUXURY\n\nVenture out and experience the sites. Whether searching for a scenic stroll or a breath taking view of Dubai from the world’s tallest buildings, this town has something for everyone.",
+    "images_old": [
+      "wp-content/uploads/2023/02/Ghost-1.png",
+      "wp-content/uploads/2023/02/Ghost-2.jpg",
+      "wp-content/uploads/2023/02/Ghost-3.jpg",
+      "wp-content/uploads/2023/02/Ghost-4.jpg",
+      "wp-content/uploads/2023/02/Ghost-5.jpg"
+    ],
+    "content_issues": [
+      "Spec line copied across all Rolls-Royce pages – verify specs per model; weekly/monthly price, deposit, min days and km were not set (\"Ask for price\")",
+      "Deposit (AED 5,500) and minimum days (1) exist in the old database but were never shown on the site – confirm with Aldy before publishing",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "toyota-land-cruiser",
+    "old_slug": "toyota-land-cruiser-car-for-rent",
+    "status": "active",
+    "name": "Toyota Land Cruiser VXR",
+    "make": "Toyota",
+    "model": "Toyota Land Cruiser",
+    "year": 2022,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": "Old site listed this under Economic – suggest moving to Premium/Luxury",
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 7,
+    "doors": 5,
+    "bags": 1,
+    "fuel": "5.3 Km / liter",
+    "price_aed": {
+      "day": 590.0,
+      "week": 4300.0,
+      "month": 14900.0
+    },
+    "deposit_aed": 2500.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2022",
+      "3.5L, 6 Cylinder",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Max Power 409 hp/6000 rpm",
+      "7 Seating Capacity",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Luxury SUV"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Experience the Ultimate Adventure with our Land Cruiser  Car Rental in Dubai\n\nWhether you crave a luxurious highway journey, an exhilarating off-road escapade, or simply desire to explore the city with flair, our car rental is the perfect companion for any trip. Embark on one of the most thrilling journeys of your life by securing the best deals on renting a Land Cruiser in Dubai.\r\n\nToyota car is a flawless blend of opulence and power, boasting a design and performance that truly defines excellence. With its impressive features on the road and behind the wheel, it's an absolute must-try. Grab it now from Aldy at an unbeatable price and ensure your journey is perfect from every angle\r\nWhy Choose Us for Renting a Toyota Land Cruiser?\n\nFeaturing a 3.5-litre twin-turbocharged V6 engine generating a remarkable 409 horsepower and 479 lb-ft of torque, this car commands attention with its sheer power. Equipped with a 10-speed automatic transmission and a two-speed transfer case, it also offers four-wheel drive, enhancing every mile of your journey.\r\n\nWhen you want to create unforgettable memories, a Land Cruiser car hire is the ideal choice. Apart from its magnificent features and striking appearance, you can also get it from us at a competitive price. Our goal is to ensure your ride is flawless from the moment you start the engine.\r\nJoin us on a Remarkable Journey!\r\n\nAt Aldy Rent A Car, we strive to make your rental experience unforgettable. To meet this demand, we have curated a wide selection of luxury, sport, family, and economical cars, including the iconic Land Cruiser, all available at cost-effective prices. Our team of professionals is dedicated to assisting you and addressing any inquiries you may have. Let us guide you in finding the perfect car that matches your demands and budget car rental. Get ready to let the fun begin!",
+    "images_old": [
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Corner.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Front-View.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Dashboard.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Interior.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Rear-Int.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Rear-View.png",
+      "wp-content/uploads/2023/05/Toyota-Land-Cruiser-2022-Rental-Aldy-Dubai-Car-Side-View.png"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mercedes-benz-c300",
+    "old_slug": "mercedes-benz-c300",
+    "status": "active",
+    "name": "Mercedes C300",
+    "make": "Mercedes",
+    "model": "Mercedes Benz C300",
+    "year": 2021,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": "Old site listed this under Economic – suggest moving to Premium/Luxury",
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "20 Km / liter",
+    "price_aed": {
+      "day": 400.0,
+      "week": 2500.0,
+      "month": 7800.0
+    },
+    "deposit_aed": 2000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2021",
+      "2.0L Turbo Inline-4 Gas",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Rear View Camera*",
+      "9-Speed Automatic Transmission",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Luxury Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-2.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-1.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-3.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-4.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-5.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-6.jpg",
+      "wp-content/uploads/2024/01/Mercedes-Benz-C300-2021-Aldy-Rent-A-Car-7.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "tesla-model-3-long-range",
+    "old_slug": "tesla-model-3-long-range",
+    "status": "active",
+    "name": "Tesla Model 3 Long Range",
+    "make": "Tesla",
+    "model": "Tesla Model 3 Long Range",
+    "year": 2024,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": "Old site listed this under Economic – suggest moving to Premium/Luxury",
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": null,
+    "price_aed": {
+      "day": 400.0,
+      "week": 3200.0,
+      "month": 9200.0
+    },
+    "deposit_aed": 2000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": null,
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2024",
+      "Electric",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Rear View Camera*",
+      "Acceleration 0 - 100 km - 4.4 sec",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Luxury Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2024/01/Front-Angle-Side-Tesla-Pic-1-Aldy-Rent-A-Car-Dubai.jpg",
+      "wp-content/uploads/2024/01/Front-Left-Side-Tesla-Pic-1-Aldy-Rent-A-Car-Dubai.jpg",
+      "wp-content/uploads/2024/01/Dashvoard.jpg",
+      "wp-content/uploads/2024/01/Rear-Left-Side-Tesla-Pic-1-Aldy-Rent-A-Car-Dubai.jpg",
+      "wp-content/uploads/2024/01/Interior-Aldy-Rent-A-Car.jpg",
+      "wp-content/uploads/2024/01/Side-Tesla-Pic-1-Aldy-Rent-A-Car-Dubai.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mitsubishi-xpander",
+    "old_slug": "mitsubishi-xpander",
+    "status": "active",
+    "name": "Mitsubishi Xpander",
+    "make": "Mitsubishi",
+    "model": "Mitsubishi Xpander",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "15 Km / liter",
+    "price_aed": {
+      "day": 185.0,
+      "week": 1250.0,
+      "month": 2890.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L DOHC 2WD EURO 4",
+      "Automatic Transmission",
+      "Parking sensors",
+      "REAR VIEW CAMERA*",
+      "Vehicle Stability Control (VSC)",
+      "Max Power 77 hp/6000 rpm",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Primary-Image-Front-Side-VIew-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Front-Side-View-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Back-View-2-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Front-Right-Side-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Interior-In-View-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Rear-Left-Side-View-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/In-View-Mitsubishi-Xpander-2024-For-Rent.jpg",
+      "wp-content/uploads/2023/01/Back-View-Mitsubishi-Xpander-2024-For-Rent.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "jac-j7",
+    "old_slug": "rent-jac-j7",
+    "status": "active",
+    "name": "JAC J7",
+    "make": "JAC",
+    "model": "JAC J7",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "16.4 Km / liter",
+    "price_aed": {
+      "day": 150.0,
+      "week": 830.0,
+      "month": 2400.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L Turbo CVT Luxury -4 Cylinder",
+      "Automatic Transmission",
+      "Max Speed 170Km/h",
+      "Rear View Camera*",
+      "Allow Wheels",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Luxury"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Rent JAC J7 Rental in Dubai\n\nRen Jac J7  and Explore the opportunity to experience the all-new 2023 JAC J7 model on the vibrant streets of Dubai, UAE. Secure your ride today with AldyRent a Car for just AED 120 per day or AED 2300 per month. Your rental package encompasses essential comprehensive insurance coverage and an allotted daily mileage of 250 km (AED 1 per extra kilometer). \r\n\nAs a standard practice, a refundable security deposit of AED 1000 is required. For inquiries and reservations, reach out to Aldy Rent a Car directly.\r\nWhy hire the JAC J7?\n\nDiscover the JAC J7 Sedan, exclusively available through Aldy Rent a Car. This 5-door Sedan accommodates up to 5 passengers and accommodates 3 medium-sized bags with ease.\r\n\nKey features include a panoramic Sunroof / Moonroof, a Reverse Camera for added convenience, daytime running Lights for enhanced safety, a user-friendly Touchscreen LCD, and much more to elevate your driving experience.\r\n\nFull of energy and passion, the new J7 sets you free. A unique collaboration between JAC Motors and the Volkswagen Group combines Asian technology with German quality standards. The dynamic J7 with its distinctive sports car looks is the most elegant lift-back designed by Daniel Gallione, the artist. He earlier had a hand in the design for Alfa Romeo and Maserati.\r\nInterior\n\nRelaxed space - Great looks, high functionality and serene elegance rule inside the J7 to ensure total comfort for all passengers.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Jac-j7-aldyrentacar-front-side-view.jpg",
+      "wp-content/uploads/2023/01/Jac-j7-aldyrentacar-front-view.jpg",
+      "wp-content/uploads/2023/01/Rent.jpg"
+    ],
+    "content_issues": [
+      "JAC J7 listed 4 times (base, black, white, red) – consider one car with colour options",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "jac-j7-red",
+    "old_slug": "jac-j7-red",
+    "status": "active",
+    "name": "JAC J7 Red",
+    "make": "JAC",
+    "model": "JAC J7",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "20 Km / liter",
+    "price_aed": {
+      "day": 150.0,
+      "week": 830.0,
+      "month": 2400.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L Turbo CVT Luxury -4 Cylinder",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Rear View Camera*",
+      "Allow Wheels",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Luxury Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Jac-J7-2023-Red-Color-Rental-Aldy-Front-View.jpg",
+      "wp-content/uploads/2023/01/Jac-J7-2023-Red-Color-Rental-Aldy-Front.jpg",
+      "wp-content/uploads/2023/01/Jac-J7-2023-Red-Color-Rental-Aldy-D.jpg",
+      "wp-content/uploads/2023/01/Jac-J7-2023-Red-Color-Rental-Aldy-Seat.jpg",
+      "wp-content/uploads/2023/01/Jac-J7-2023-Red-Color-Rental-Aldy-Side-View.jpg"
+    ],
+    "content_issues": [
+      "JAC J7 listed 4 times (base, black, white, red) – consider one car with colour options",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "jac-j7-black",
+    "old_slug": "jac-j7-black",
+    "status": "active",
+    "name": "Jac J7 Black",
+    "make": "JAC",
+    "model": "JAC J7",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "17.2 Km / liter",
+    "price_aed": {
+      "day": 150.0,
+      "week": 830.0,
+      "month": 2400.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L STD CVT",
+      "Automatic Transmission",
+      "Parking sensors"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": null,
+    "description_old": "Explore the opportunity to experience the all-new 2023 JAC J7 model on the vibrant streets of Dubai, UAE. Secure your ride today with Aldy Rent a Car for just AED 150 per day or AED 2400 per month. Your rental package encompasses essential comprehensive insurance coverage and an allotted daily mileage of 250 km. As a standard practice, a refundable security deposit of AED 1000 is required. For inquiries and reservations, reach out to Aldy Rent a Car directly.\r\n<br/><br/>\r\n<h3>Why hire the JAC J7?</h3>\r\nDiscover the JAC J7 Sedan, exclusively available through Aldy Rent a Car. This 5-door Sedan accommodates up to 5 passengers and accommodates 3 medium-sized bags with ease. Key features include a panoramic Sunroof / Moonroof, a Reverse Camera for added convenience, daytime running Lights for enhanced safety, a user-friendly Touchscreen LCD, and much more to elevate your driving experience.",
+    "images_old": [
+      "wp-content/uploads/2023/02/Jac-J7-2023-Black-Color-Monthly-Rental-Aldy-Front-View.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-2.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Color.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Dashboard.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Front.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-LCD-Screen.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-ODO.jpg"
+    ],
+    "content_issues": [
+      "JAC J7 listed 4 times (base, black, white, red) – consider one car with colour options",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "jac-j7-white",
+    "old_slug": "jac-j7-white",
+    "status": "active",
+    "name": "JAC J7 White",
+    "make": "JAC",
+    "model": "JAC J7",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "15 Km / liter",
+    "price_aed": {
+      "day": 150.0,
+      "week": 830.0,
+      "month": 2400.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L COM iCVT",
+      "Automatic Transmission",
+      "Parking sensors"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": null,
+    "description_old": "Explore the opportunity to experience the all-new 2023 JAC J7 model on the vibrant streets of Dubai, UAE. Secure your ride today with Aldy Rent a Car for just AED 150 per day or AED 2400 per month. Your rental package encompasses essential comprehensive insurance coverage and an allotted daily mileage of 250 km (AED 1 per extra kilometer).  As a standard practice, a refundable security deposit of AED 1000 is required. For inquiries and reservations, reach out to Aldy Rent a Car directly.\r\n<br/><br/>\r\n<h3>Why JAC J7</h3>\r\nFull of energy and passion, the new J7 sets you free. A unique collaboration between JAC Motors and the Volkswagen Group combines Asian technology with German quality standards. The dynamic J7 with its distinctive sports car looks is the most elegant lift-back designed by Daniel Gallione, the artist. He earlier had a hand in the design for Alfa Romeo and Maserati.",
+    "images_old": [
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Front-1.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Dashboard-1.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Corner.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Front-Seat.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Front-View.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Seat.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Side-View.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Side.jpg",
+      "wp-content/uploads/2023/02/Jac-J7-2023-White-Color-Monthly-Rental-Aldy-Steering.jpg"
+    ],
+    "content_issues": [
+      "JAC J7 listed 4 times (base, black, white, red) – consider one car with colour options",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mazda-cx30",
+    "old_slug": "mazda-cx30",
+    "status": "active",
+    "name": "Mazda CX30",
+    "make": "Mazda",
+    "model": "Mazda CX30",
+    "year": 2021,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "20 Km / liter",
+    "price_aed": {
+      "day": 150.0,
+      "week": 900.0,
+      "month": 3250.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2021",
+      "SKYACTIV® 4 Cylinder - 2.5 L",
+      "Sport Drive Mode",
+      "Parking sensors",
+      "Rear View Camera*",
+      "194 km/h Max. Speed Limit",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: SUV"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-1.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-2.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-3.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-4.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-5.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-6.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-7.jpg",
+      "wp-content/uploads/2024/01/Mazda-CX30-Aldy-Rent-A-Car-8.jpg"
+    ],
+    "content_issues": [
+      "Description copied from a car magazine – rewrite in Aldy's own words",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "toyota-yaris",
+    "old_slug": "toyota-yaris",
+    "status": "active",
+    "name": "Toyota Yaris",
+    "make": "Toyota",
+    "model": "Toyota Yaris",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "20.5 Km / liter",
+    "price_aed": {
+      "day": 135.0,
+      "week": 830.0,
+      "month": 2100.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L 4-Cylinder, 16-Valve CVT",
+      "Automatic Transmission",
+      "Parking sensors",
+      "REAR VIEW CAMERA*",
+      "Max Power 105 hp/6000 rpm",
+      "1+4 Seating Capacity",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Left-Corner-Front-Up-View-Toyota-Yaris-Green-Metalic.jpg",
+      "wp-content/uploads/2023/01/Front-Side-Yaris-Green.jpg",
+      "wp-content/uploads/2023/01/Side-Angle-Right-Toyota-Yaris-Green-Metalic.jpg",
+      "wp-content/uploads/2023/01/Dashboard-Wide-Angle.jpg",
+      "wp-content/uploads/2023/01/Inteiror-Inside.jpg",
+      "wp-content/uploads/2023/01/Inteorior-2.jpg",
+      "wp-content/uploads/2023/01/Interiror-1.jpg",
+      "wp-content/uploads/2023/01/Right-Corner-Rear-View-Toyota-Yaris-Green-Metalic.jpg",
+      "wp-content/uploads/2023/01/Real-Side-Yaris-Green.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mg5",
+    "old_slug": "mg5-std-for-rent-monthly",
+    "status": "active",
+    "name": "MG5 STD",
+    "make": "MG",
+    "model": "MG5 STD",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "45 Km / liter",
+    "price_aed": {
+      "day": 135.0,
+      "week": 830.0,
+      "month": 1800.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L / 1,498 With Maximum Speed 180 Km/h",
+      "Max Power 84 hp/6000 rpm",
+      "Parking sensors"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision Damage Waiver"
+    ],
+    "luxury_specs": null,
+    "description_old": "Rent Monthly MG 5\n\nRent Monthly MG 5 the adventure, lively and capable - the MG 5 is one of the most exciting sedans around. Whether for work or for pleasure, you can be confident that the vehicle is always looking to Do More to excite, with the three trim levels - STD, COM, and DEL - providing all the requirements you could possibly need. Discover more about this standout model today and embrace life and its many journeys in style.\r\nExterior\n\nThe bold and charismatic looks of the MG 5 are defined by the flowing roofline and sharp edges - a combination which captures the attention of the most inquisitive of passersby.\r\n\nThe ample dimensions of the vehicle ensure that its presence is always felt, and a selection of sporty flourishes such as the tail lights, LED daytime running lights, and 16 inch alloy wheels are all welcome features. There’s even an electric sunroof that will open up to the outside world, filling the cabin with fresh air and enhancing the sense of space that is on offer. A selection of colour schemes gives you plenty of choice over the finish of the MG 5, with colours including Silver, Blue, and Golden available.\r\nInterior\n\nAs soon as you step inside the MG 5, you’ll realise that the vehicle is as intelligent as it is stylish. The forward-thinking cabin puts you in complete control of all key features, while the sense of space adds a sense of freedom.\r\n\nChoose from a range of leather and fabric upholstery, and benefit from the adjustable seating in order to find the perfect position. With boot space of up to 512 litres, plus a host of storage options, you can also be confident that keeping the MG 5 ordered and tidy is effortless.",
+    "images_old": [
+      "wp-content/uploads/2023/02/MG-5-Front-Side-Image.jpg",
+      "wp-content/uploads/2023/02/MG-5-Front-Side.jpg",
+      "wp-content/uploads/2023/02/Front-Dashboard-MG5.jpg",
+      "wp-content/uploads/2023/02/MG5-Rear-View.jpg",
+      "wp-content/uploads/2023/02/MG5-Side-View.jpg",
+      "wp-content/uploads/2023/02/Rear-Interior-MG5.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "toyota-corolla",
+    "old_slug": "toyota-corolla-monthy-car-rental-dubai",
+    "status": "active",
+    "name": "Toyota Corolla",
+    "make": "Toyota",
+    "model": "Toyota Corolla",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "9.48 Km / liter",
+    "price_aed": {
+      "day": 125.0,
+      "week": 750.0,
+      "month": 2390.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.6L, 4 Cylinders In-Line 16V CVT",
+      "Automatic Transmission",
+      "Parking sensors",
+      "End to End 4 Speakers",
+      "Max Power 121 hp/6000 rpm",
+      "1+4 Seating Capacity",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Monthly car rental Dubai Toyota Corolla is the most efficient and stylish car that suits every customer's budget. The inexpensive automobile is well-equipped with safety and infotainment features for a comfortable and enjoyable ride. At our rent-a-car company in Dubai, it is available in 5 trim levels; S, LE, and SE have a cylinder of 1.8 litres, while XLE and XSE have a slightly higher capacity. The engine has an automatic transmission and 126 horsepower; higher versions include a 2.0-litre inline-four-cylinder engine with a CVT. At the same time, offering a 4-cylinder engine allows fuel conservation ratings of 31 mpg when driving downtown and 40 mpg on the freeway. Send an inquiry to rent. Toyota car at the best price for monthly rental.\n\nWhy Toyota Corolla 2023 is Best for Travelling?\n\nSafety Features\n\nSafety is always a priority, so no matter how low the prices are, safety features are spectacular, having ten airbags, roadside assistance, and auto electronic brake-force dispersion. Safety technologies reduce the risks of accidents with good mileage and seating space.\r\n\nStylish Exterior\n\nThe exterior is a perfect example of flex on a budget because of its many colours, including black sand pearl, celestine, and Barcelona red metallic. Front fenders consist of LED headlights, whereas lower glass plus rear ends give a dramatic look, enhanced with comprehensive Dynamo, Aerodynamics, heated seats, etc.\r\n\nUseful yet Good looking Interior\n\nA 13.1 cubic foot trunk has suitable space for baggage and other stuff. The car’s new suspension system takes ride quality to the next level. You will find a cargo space of 17.8 cubic feet in the back rear seats, but you will have 23.3 cubic feet of space when you fold the seats. The 2023 model has developed and outfitted many luxury features and seat arrangements.\r\n\nCustomers can also select the colour of the interior with soft-trimmed seats for extra convenience, which is one of the main reasons people prefer to rent a Toyota Corolla.\r\n\nTechnological Features\n\nHaving power steering and power windows is one of the leading technological development of new designs. Anti-lock braking systems make it very safe. Of course, an effective air conditioner is always necessary in every model.\r\n\nConventional technology features you can attain include Android and apple car play, a touch screen of 8 inches, navigation, and compatibility with Apple and Android Car Play.\r\n\nAffordable Price - Monthly car rental Dubai \n\nToyota Corolla is recognized mainly for its low rent and remarkable features; only some cars are affordable and have features that will assure your safety and comfort. Even if you do not want to spend the money at once, there is an option of daily and weekly cheap car hire plans that makes it very convenient for people to rent a car monthly in Dubai.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Toyota-Corolla-2023-Model-Avaible-For-Rental-Aldy-Rent-A-car-1.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-5.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-3.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-4.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-1.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-2.jpg",
+      "wp-content/uploads/2023/01/Toyota-Corolla-Monthly-car-rental-dubai-6.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "nissan-sunny",
+    "old_slug": "nissan-sunny",
+    "status": "active",
+    "name": "Nissan Sunny",
+    "make": "Nissan",
+    "model": "Nissan Sunny",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "17.5 Km / liter",
+    "price_aed": {
+      "day": 105.0,
+      "week": 625.0,
+      "month": 1790.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5 Liter, DOHC 16 Valves, 4 Cylinder SV AT",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Rear View Camera",
+      "Max Power 99 hp/6000 rpm",
+      "1+4 Seating Capacity",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Face it, the Ghost is possibly the most luxurious SUV in production, and to get behind the wheel of one of these limited production vehicles would be a dream come true for any car enthusiast. The Cullinan, named after the world's largest uncut diamond, is spectacular in every way. It has the ultra-luxury feel of a Rolls Royce and the superior handling of an SUV.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Nissan-Sunny-Car-Rental-2023-Silver-Aldy-Side-Front-View.jpg",
+      "wp-content/uploads/2023/01/1.jpg",
+      "wp-content/uploads/2023/01/2.jpg",
+      "wp-content/uploads/2023/01/3.jpg",
+      "wp-content/uploads/2023/01/4.jpg",
+      "wp-content/uploads/2023/01/5.jpg",
+      "wp-content/uploads/2023/01/6.jpg",
+      "wp-content/uploads/2023/01/Untitled-1.jpg"
+    ],
+    "content_issues": [
+      "Old fleet card said minimum 1 day, car page said 2 days – confirm with Aldy",
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mitsubishi-attrage",
+    "old_slug": "rent-mitsubishi-attrage",
+    "status": "active",
+    "name": "Mitsubishi Attrage",
+    "make": "Mitsubishi",
+    "model": "Mitsubishi Attrage",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "20 Km / liter",
+    "price_aed": {
+      "day": 99.0,
+      "week": 650.0,
+      "month": 1599.0
+    },
+    "deposit_aed": 1000.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.2 AUTO High Line DOHC 12-valve MIVEC:",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Cruise Control",
+      "Max Power 57 hp/6000 rpm",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Rent Mitsubishi Attrage\n\nRent mitsubishi attrage the streamlined based on advanced computer simulation to slip through the wind with a class-leading 0.29* Cd that lowers noise, raises fuel efficiency and enhances handling stability. * On models with 14-inch full wheel covers. According to internal test results.\r\n\nInterior\r\n\nWelcome to a comfortable space with roominess among the top of its class. The simple yet stylish interior surrounds you and your passengers with quality materials, smooth flowing lines and a seamless fit and finish that conveys quality craftsmanship.\r\n\nSoft yet supportive seating, thoughtful amenities and attractive features like silver accents further enhance your driving pleasure. In the Attrage, traveling is always a relaxing and enjoyable experience form Aldy Rent A Car.",
+    "images_old": [
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-2.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-8.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-5.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-3.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-4.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-6.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-7.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-9.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-1.jpg",
+      "wp-content/uploads/2023/01/Mitsubishi-Attrage-2023-Car-Rental-Dubai-10.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "mg-gt",
+    "old_slug": "mg-gt5",
+    "status": "draft",
+    "name": "MG GT5",
+    "make": "MG",
+    "model": "MG GT5",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": "SUV",
+    "transmission": "Automatic",
+    "seats": 5,
+    "doors": 4,
+    "bags": 1,
+    "fuel": "15 Km / liter",
+    "price_aed": {
+      "day": 190.0,
+      "week": 1140.0,
+      "month": 3300.0
+    },
+    "deposit_aed": 1500.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L COM CVT EU5",
+      "Automatic Transmission",
+      "Max Power 84 hp/6000 rpm"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": null,
+    "description_old": "Adventure, lively and capable - the MG 5 is one of the most exciting sedans around. Whether for work or for pleasure, you can be confident that the vehicle is always looking to Do More to excite, with the three trim levels - STD, COM, and DEL - providing all the requirements you could possibly need. Discover more about this standout model today and embrace life and its many journeys in style.\r\n<br/><br/>\r\n<h3>Exterior</h3>\r\nThe bold and charismatic looks of the MG 5 are defined by the flowing roofline and sharp edges - a combination which captures the attention of the most inquisitive of passersby. The ample dimensions of the vehicle ensure that its presence is always felt, and a selection of sporty flourishes such as the tail lights, LED daytime running lights, and 16 inch alloy wheels are all welcome features. There’s even an electric sunroof that will open up to the outside world, filling the cabin with fresh air and enhancing the sense of space that is on offer. A selection of colour schemes gives you plenty of choice over the finish of the MG 5, with colours including Silver, Blue, and Golden available.\r\n<br/><br/>\r\n<h3>Interior</h3>\r\nAs soon as you step inside the MG 5, you’ll realise that the vehicle is as intelligent as it is stylish. The forward-thinking cabin puts you in complete control of all key features, while the sense of space adds a sense of freedom. Choose from a range of leather and fabric upholstery, and benefit from the adjustable seating in order to find the perfect position. With boot space of up to 512 litres, plus a host of storage options, you can also be confident that keeping the MG 5 ordered and tidy is effortless.",
+    "images_old": [
+      "wp-content/uploads/2023/02/MG5gt.png",
+      "wp-content/uploads/2023/02/2-1.jpg",
+      "wp-content/uploads/2023/02/1-1.jpg",
+      "wp-content/uploads/2023/02/3-1.jpg",
+      "wp-content/uploads/2023/02/4-1.jpg",
+      "wp-content/uploads/2023/02/5-1.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  },
+  {
+    "slug": "toyota-rush",
+    "old_slug": "rent-toyota-rush",
+    "status": "draft",
+    "name": "Toyota Rush",
+    "make": "Toyota",
+    "model": "Toyota Rush",
+    "year": 2023,
+    "old_category": "Economic Car",
+    "category": "economy",
+    "category_note": null,
+    "body_type": null,
+    "transmission": "Automatic",
+    "seats": 7,
+    "doors": 5,
+    "bags": 1,
+    "fuel": "16.3 Km / liter",
+    "price_aed": {
+      "day": 170.0,
+      "week": 1020.0,
+      "month": 2999.0
+    },
+    "deposit_aed": 1500.0,
+    "min_days": 2,
+    "km_limit": "250 km / Day",
+    "extra_km_fee": "0.5 AED / Extra Km",
+    "discounts": {
+      "weekly": "15%",
+      "monthly": "30%"
+    },
+    "features": [
+      "Model Year: 2023",
+      "1.5L, 4 Cylinder, LITRES 45",
+      "Automatic Transmission",
+      "Parking sensors",
+      "Max Power 103 hp/6000 rpm",
+      "7 Seating Capacity",
+      "Apple Carplay & Android Auto Ready",
+      "Body Type: Sedan"
+    ],
+    "included": [
+      "Third Party Liability",
+      "Collision damage waiver"
+    ],
+    "luxury_specs": "Power 588 kW / 800 hp | Torque 1000 Nm | 0-100 km/h 2.9 s | Vmax 315 km/h / 196 mph\r\nFuel Economy* city 15,2 l/100km | highway 8,9 l/100km | combined 11,3 l/100km | CO2 257 g/km",
+    "description_old": "Rent Toyota Rush for Cheap price\n\nA fundamentally new level of interior ergonomics and thoughtfulness of every detail of the Toyota cars make them almost the most ideal car for every day trip. The long longitudinal adjustment of the front seats and the adjustable central armrest create favorable conditions for rent Toyota Rush with or without a driver. Multi-level adjustment of the driver’s and passenger seats make the car configuration extremely comfortable. Rent a Toyota Rush from our car hire Dubai for business or family trips over long distances allows you to use the car more comfortably, as there is enough space in the car’s luggage compartment to fit four suitcases.\r\n\nThe Toyota Rush 2023 is a popular SUV available for rent in Dubai. This car is the 3rd generation of ‘Toyota’ – a Japanese automobile manufacturer- and was launched in 2017. Whereas the 1st generation of the vehicle was introduced in 1997, the 2nd generation was soon after.\r\n\nThe company’s smallest SUV is based on the rear-wheel drive Avanza micro-van. However, it includes small technical changes making it even more comfy and aesthetically far nicer than the commercial van.\r\n\n2023 Rush is a gasoline-type vehicle with a 16V DOHC engine with a capacity of 1.5L & 4 cylinders and dual trims EX and GX.\r\nWith its spacious interior and range of features, the Rush is perfect for families or groups looking to explore everything Dubai offers.\r\nMultimedia and Connectivity - Toyota Rush Rent A Car\n\nThe Toyota Rush has an 8-speaker audio system with Bluetooth, USB, and AUX connectivity. The system is compatible with Apple CarPlay and Android Auto. Also, it has a rear entertainment system. There is also a wireless charger for devices. Additionally, the car’s steering wheel controls audio and voice-activated navigation.\r\nExterior & Interior\n\nSUV features a sleek and futuristic look that will catch people’s attention. It has several external and interior characteristics that are guaranteed to impress.",
+    "images_old": [
+      "wp-content/uploads/2023/02/PNG-Toyota-Rush.png",
+      "wp-content/uploads/2023/01/Toyota-Rush.png",
+      "wp-content/uploads/2023/02/0cf3b4d7-9aa2-4539-88ec-864fc762ac83.jpg",
+      "wp-content/uploads/2023/02/118dc731-79bb-411d-9cff-943d3a69115f.jpg",
+      "wp-content/uploads/2023/02/5133c9b1-a2c8-4c7e-a195-f9dccb1ae623.jpg",
+      "wp-content/uploads/2023/02/bb1c809e-cf8e-4b5a-a054-4087db382a4a.jpg"
+    ],
+    "content_issues": [
+      "Old site showed both \"250 km / Day\" and \"4500Km / Month\" – confirm the real mileage rule with Aldy"
+    ]
+  }
+]

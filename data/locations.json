@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Sharjah",
+    "slug": "sharjah",
+    "old_slug": "sharjah"
+  },
+  {
+    "name": "Al Ain",
+    "slug": "al-ain",
+    "old_slug": "al-ain"
+  },
+  {
+    "name": "Al Barsha",
+    "slug": "al-barsha",
+    "old_slug": "al-barsha"
+  },
+  {
+    "name": "Al Furjan",
+    "slug": "al-furjan",
+    "old_slug": "al-furjan"
+  },
+  {
+    "name": "Al Khail Gate",
+    "slug": "al-khail-gate",
+    "old_slug": "al-khail-gate"
+  },
+  {
+    "name": "Al Maktoum International Airport",
+    "slug": "al-maktoum-international-airport",
+    "old_slug": "al-maktoum-international-airport"
+  },
+  {
+    "name": "Al Nahda",
+    "slug": "al-nahda",
+    "old_slug": "al-nahda"
+  },
+  {
+    "name": "Al Nahda Dubai",
+    "slug": "al-nahda-dubai",
+    "old_slug": "al-nahda-dubai"
+  },
+  {
+    "name": "Al Nahda Sharjah",
+    "slug": "al-nahda-sharjah",
+    "old_slug": "al-nahda-sharjah"
+  },
+  {
+    "name": "Al Qusais",
+    "slug": "al-qusais",
+    "old_slug": "al-qusais"
+  },
+  {
+    "name": "Al Safa",
+    "slug": "al-safa",
+    "old_slug": "al-safa"
+  },
+  {
+    "name": "Al Warqa",
+    "slug": "al-warqa",
+    "old_slug": "al-warqa"
+  },
+  {
+    "name": "Arjan",
+    "slug": "arjan",
+    "old_slug": "arjan"
+  },
+  {
+    "name": "Bur Dubai",
+    "slug": "bur-dubai",
+    "old_slug": "bur-dubai"
+  },
+  {
+    "name": "Burj Khalifa",
+    "slug": "burj-khalifa",
+    "old_slug": "burj-khalifa"
+  },
+  {
+    "name": "Burj al Arab",
+    "slug": "burj-al-arab",
+    "old_slug": "burj-al-arab"
+  },
+  {
+    "name": "Business Bay",
+    "slug": "business-bay",
+    "old_slug": "business-bay"
+  },
+  {
+    "name": "City Walk",
+    "slug": "city-walk",
+    "old_slug": "city-walk"
+  },
+  {
+    "name": "DIFC",
+    "slug": "difc",
+    "old_slug": "difc"
+  },
+  {
+    "name": "Deira City Center",
+    "slug": "deira-city-center",
+    "old_slug": "dubai-creek-tower"
+  },
+  {
+    "name": "Discovery Gardens",
+    "slug": "discovery-gardens",
+    "old_slug": "discovery-gardens"
+  },
+  {
+    "name": "Downtown",
+    "slug": "downtown",
+    "old_slug": "downtown"
+  },
+  {
+    "name": "Dubai Creek",
+    "slug": "dubai-creek",
+    "old_slug": "dubai-creek"
+  },
+  {
+    "name": "Dubai Hills",
+    "slug": "dubai-hills",
+    "old_slug": "dubai-hills"
+  },
+  {
+    "name": "Dubai International Airport (DXB)",
+    "slug": "dubai-international-airport-dxb",
+    "old_slug": "dubai-international-airport-dxb"
+  },
+  {
+    "name": "Dubai Investment Park",
+    "slug": "dubai-investment-park",
+    "old_slug": "dubai-investment-park"
+  },
+  {
+    "name": "Dubai Mall",
+    "slug": "dubai-mall",
+    "old_slug": "dubai-mall"
+  },
+  {
+    "name": "Dubai Marina",
+    "slug": "dubai-marina",
+    "old_slug": "dubai-marina"
+  },
+  {
+    "name": "Emirates Hills",
+    "slug": "emirates-hills",
+    "old_slug": "emirates-hills"
+  },
+  {
+    "name": "Etihad Mall",
+    "slug": "etihad-mall",
+    "old_slug": "etihad-mall"
+  },
+  {
+    "name": "Internet City",
+    "slug": "internet-city",
+    "old_slug": "internet-city"
+  },
+  {
+    "name": "Jumeirah Lake Towers",
+    "slug": "jumeirah-lake-towers",
+    "old_slug": "jumeirah-lake-towers"
+  },
+  {
+    "name": "Jumeirah Village Circle",
+    "slug": "jumeirah-village-circle",
+    "old_slug": "jumeirah-village-circle"
+  },
+  {
+    "name": "Jumeirah beach residence",
+    "slug": "jumeirah-beach-residence",
+    "old_slug": "jumeirah-beach-residence"
+  },
+  {
+    "name": "Mall of Emirates",
+    "slug": "mall-of-emirates",
+    "old_slug": "mall-of-emirates"
+  },
+  {
+    "name": "Media City",
+    "slug": "media-city",
+    "old_slug": "media-city"
+  },
+  {
+    "name": "Mirdif",
+    "slug": "mirdif",
+    "old_slug": "mirdif"
+  },
+  {
+    "name": "Nad al Sheba",
+    "slug": "nad-al-sheba",
+    "old_slug": "nad-al-sheba"
+  },
+  {
+    "name": "Satwa",
+    "slug": "satwa",
+    "old_slug": "satwa"
+  },
+  {
+    "name": "Sharjah International Airport",
+    "slug": "sharjah-international-airport",
+    "old_slug": "sharjah-international-airport"
+  },
+  {
+    "name": "Sheikh Zayed Road",
+    "slug": "sheikh-zayed-road",
+    "old_slug": "sheikh-zayed-road"
+  },
+  {
+    "name": "Showroom Umm Ramool",
+    "slug": "showroom-umm-ramool",
+    "old_slug": "showroom-umm-ramool"
+  },
+  {
+    "name": "Silicon Oasis",
+    "slug": "silicon-oasis",
+    "old_slug": "silicon-oasis"
+  },
+  {
+    "name": "Souk al Marfa",
+    "slug": "souk-al-marfa",
+    "old_slug": "souk-al-marfa"
+  },
+  {
+    "name": "Sports City",
+    "slug": "sports-city",
+    "old_slug": "sports-city"
+  },
+  {
+    "name": "Umm Suqeim",
+    "slug": "umm-suqeim",
+    "old_slug": "umm-suqeim"
+  }
+]
