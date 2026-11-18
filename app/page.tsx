@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Briefcase, CalendarRange, Car as CarIcon, Check, Clock, Gem, House, MapPin, Plane, ShieldCheck, Sparkles, Truck, Wrench } from "lucide-react";
-import { cars, carsInCategory, categories, cheapestDay, getCar, type Car } from "@/lib/cars";
+import { carsInCategory, cheapestDay, getCar, toCard, type Car } from "@/lib/cars";
 import { locations, locationPath } from "@/lib/locations";
 import { faqs } from "@/content/faqs";
 import { formatAED } from "@/lib/format";
@@ -11,7 +11,8 @@ import { reviews } from "@/content/testimonials";
 import { businessSchema } from "@/lib/schema";
 import { site, waLink } from "@/lib/site";
 import FaqList from "@/components/FaqList";
-import { CarLanes, Reveal, type LaneCar } from "@/components/ui/car-motion";
+import { Reveal } from "@/components/ui/car-motion";
+import CarCard from "@/components/CarCard";
 import VideoHero, { type HeroPoster, type HeroVideo } from "@/components/ui/video-hero";
 import Testimonials from "@/components/Testimonials";
 import BlogCard from "@/components/BlogCard";
@@ -60,15 +61,11 @@ export default function Home() {
     : { src: heroCar.src, srcSet: `${heroCar.thumb} 600w, ${heroCar.md} 1000w, ${heroCar.src} ${heroCar.w}w`, w: heroCar.w, h: heroCar.h };
   const heroVideo: HeroVideo | undefined = hv ? { mp4: hv.mp4, mp4Mobile: hv.mp4Mobile } : undefined;
   const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
-  const lane = (c: Car): LaneCar => ({
-    slug: c.slug,
-    name: c.name,
-    price: `${formatAED(c.price.day)}/day`,
-    tag: categories[c.category].label,
-    img: { src: c.images[0].thumb, w: 600, h: Math.round((600 * c.images[0].h) / c.images[0].w), alt: c.images[0].alt },
-  });
-  const byPrice = [...cars].sort((a, b) => a.price.day - b.price.day);
-  const laneRows = [byPrice.filter((_, i) => i % 2 === 0).map(lane), byPrice.filter((_, i) => i % 2 === 1).map(lane)];
+  // featured cars on the home page: a spread from everyday to luxury
+  const featured = ["mazda-cx30", "toyota-corolla", "mitsubishi-xpander", "tesla-model-3-long-range", "toyota-land-cruiser", "rolls-royce-cullinan"]
+    .map((slug) => getCar(slug))
+    .filter((c): c is Car => Boolean(c))
+    .map(toCard);
   const economyFrom = Math.min(...carsInCategory("economy").map((c) => c.price.day));
   const luxuryFrom = Math.min(...carsInCategory("luxury").map((c) => c.price.day));
   const homeFaqs = faqs.filter((f) => ["documents-required", "deposit", "fuel-salik", "minimum-age", "payment"].includes(f.slug));
@@ -154,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CARS – gliding rows (components/ui/car-motion.tsx) */}
+      {/* CARS – featured car cards (same card as /cars/) */}
       <section className="pt-20">
         <div className="container-x">
           <SectionHeading
@@ -167,8 +164,14 @@ export default function Home() {
               </Link>
             }
           />
+          <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {featured.map((c) => (
+              <li key={c.slug}>
+                <CarCard car={c} />
+              </li>
+            ))}
+          </ul>
         </div>
-        <CarLanes rows={laneRows} className="mt-6" />
       </section>
 
       {/* WHO WE RENT TO (idea from alfareedbm.com "Industries we serve") */}
