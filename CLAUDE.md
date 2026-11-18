@@ -40,6 +40,7 @@ Cloudflare Pages: build command `npm run build`, output folder `out`, Node 20+.
 - About "Meet the team": `content/team.ts` + photos in `team_photos/<slug>.jpg` (git-ignored) → `npm run images` makes square, face-centred crops in `public/images/team/`. Hidden while the list is empty
 - Home also has "Who we rent to" and "From the blog" (`components/BlogCard.tsx`, shared with /blog/)
 - MosaicHero (3D photo wall) is no longer on the home page but kept in `components/ui/car-motion.tsx`
+- CarLanes (scrolling car rows) removed from the home page (user request 18 Nov 2026) – home "Find your next car" now shows 6 normal `CarCard`s (list in `app/page.tsx` `featured`). CarLanes is kept in `components/ui/car-motion.tsx`
 - (old) Hero image is a transparent cut-out made by `scripts/convert-images.mjs` (CSS blend modes cost ~2 s of main-thread time on mobile)
 - `scripts/flatten-segments.mjs`: Next 16 export writes prefetch payloads as nested folders but the router requests flat `__next.a.b.txt` files → copies them flat so prefetches don't 404
 
