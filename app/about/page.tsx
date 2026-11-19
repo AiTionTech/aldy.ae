@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, HeartHandshake, MapPin, ShieldCheck, Truck } from "lucide-react";
+import { ArrowRight, Car, Clock, HeartHandshake, MapPin, ShieldCheck, Star, Truck } from "lucide-react";
 import { cars } from "@/lib/cars";
 import { locations } from "@/lib/locations";
 import { pageMeta } from "@/lib/seo";
@@ -21,6 +21,13 @@ const values = [
 ];
 
 export default function AboutPage() {
+  // real figures only (never invent stats): Google rating, cars on the site, delivery areas, support hours
+  const stats = [
+    { Icon: Star, value: `${site.googleRating}`, suffix: "★", label: "Google rating from our customers", tone: "bg-charcoal text-white", num: "text-accent-500", sub: "text-white/75" },
+    { Icon: Car, value: `${cars.length}`, suffix: "", label: "Car models, from economy to Rolls-Royce", tone: "bg-accent-500 text-brand-700", num: "text-brand-700", sub: "text-brand-700/80" },
+    { Icon: MapPin, value: `${locations.length}`, suffix: "", label: "Delivery areas in Dubai and Sharjah", tone: "bg-brand-500 text-white", num: "text-white", sub: "text-white/80" },
+    { Icon: Clock, value: "24/7", suffix: "", label: "Support and car delivery", tone: "border border-line bg-white text-ink", num: "text-accent-700", sub: "text-muted" },
+  ];
   return (
     <>
       <PageHeader
@@ -49,14 +56,27 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="space-y-4">
-          {values.map(({ Icon, title, text }) => (
-            <div key={title} className="rounded-3xl border border-line p-6">
-              <Icon className="size-6 text-brand-600" aria-hidden />
-              <h2 className="mt-3 font-bold">{title}</h2>
-              <p className="mt-1 text-sm leading-6 text-muted">{text}</p>
-            </div>
-          ))}
-          <div className="bg-glow rounded-3xl border border-line bg-sea-50 p-6">
+          {/* stat cards (idea from alfareedbm.com/about) – site colours: charcoal, sand, slate, white */}
+          <ul data-reveal-stagger className="grid grid-cols-2 gap-4">
+            {stats.map(({ Icon, value, suffix, label, tone, num, sub }) => (
+              <li
+                key={label}
+                className={`group relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-6 shadow-card transition-[transform,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-lift ${tone}`}
+              >
+                <Icon className="size-5 opacity-80" aria-hidden />
+                {/* soft circle decoration */}
+                <span className="absolute -top-8 -right-8 size-28 rounded-full bg-white/10 transition-transform duration-700 group-hover:scale-125" aria-hidden />
+                <p className="mt-6">
+                  <span className={`block font-display text-4xl font-bold tracking-tight sm:text-5xl ${num}`}>
+                    {value}
+                    {suffix && <span className="ml-0.5 text-3xl">{suffix}</span>}
+                  </span>
+                  <span className={`mt-2 block text-sm leading-5 font-medium ${sub}`}>{label}</span>
+                </p>
+              </li>
+            ))}
+          </ul>
+          <div data-reveal className="rounded-3xl border border-line bg-white p-6 shadow-card">
             <p className="flex items-center gap-2 text-sm text-ink/70">
               <MapPin className="size-4" aria-hidden /> {site.address.full}
             </p>
@@ -65,6 +85,21 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* what we stand for */}
+      <section className="container-x pb-6">
+        <ul data-reveal-stagger className="grid gap-4 md:grid-cols-3">
+          {values.map(({ Icon, title, text }) => (
+            <li key={title} className="rounded-3xl border border-line bg-white p-6 shadow-card transition-[transform,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-lift">
+              <span className="grid size-11 place-items-center rounded-2xl bg-accent-50 text-accent-700">
+                <Icon className="size-5" aria-hidden />
+              </span>
+              <h2 className="mt-4 font-bold">{title}</h2>
+              <p className="mt-1 text-sm leading-6 text-muted">{text}</p>
+            </li>
+          ))}
+        </ul>
       </section>
       {/* Meet the team – real managers from content/team.ts (hidden until added) */}
       <TeamSection />

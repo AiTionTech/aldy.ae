@@ -84,7 +84,7 @@ export default async function LocationPage({ params }: Params) {
 
       <section className="container-x">
         <h2 className="h-section">Popular cars in {l.name}</h2>
-        <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul data-reveal-stagger className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map((c) => (
             <li key={c.slug}>
               <CarCard car={c} query={query} />
@@ -103,7 +103,7 @@ export default async function LocationPage({ params }: Params) {
             {nearby.map((n) => (
               <li key={n.slug}>
                 <Link href={locationPath(n)} className="chip">
-                  <MapPin className="size-3.5 text-sea-600" aria-hidden /> {n.name}
+                  <MapPin className="size-3.5 text-accent-700" aria-hidden /> {n.name}
                 </Link>
               </li>
             ))}

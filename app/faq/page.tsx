@@ -24,7 +24,7 @@ export default function FaqPage() {
       />
       <section className="container-x max-w-4xl py-12">
         <FaqList items={faqs} />
-        <div className="mt-10 flex flex-col items-start gap-4 rounded-3xl bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col items-start gap-4 rounded-3xl border border-line bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="text-lg font-bold">Still have a question?</h2>
             <p className="text-sm text-muted">Our team answers on WhatsApp, usually within minutes.</p>

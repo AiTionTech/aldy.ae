@@ -152,7 +152,7 @@ export const toCard = (c: Car): CardCar => ({
   transmission: c.transmission,
   fuelType: c.fuelType,
   price: c.price,
-  images: c.images.slice(0, 1),
+  images: c.images.slice(0, 4), // cards cross-fade through up to 4 photos (components/CardPhotos.tsx)
   colours: c.colours?.map(({ name, swatch }) => ({ name, swatch })),
 });
 

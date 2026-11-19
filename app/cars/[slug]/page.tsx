@@ -172,7 +172,7 @@ function CarPage({ car }: { car: Car }) {
                 <tbody className="divide-y divide-line">
                   {priceRows.map(([label, p]) => (
                     <tr key={label}>
-                      <th scope="row" className="bg-surface/60 px-4 py-3 text-left font-medium text-muted">
+                      <th scope="row" className="bg-canvas px-4 py-3 text-left font-medium text-muted">
                         {label}
                       </th>
                       <td className="px-4 py-3 text-right font-semibold">
@@ -187,13 +187,13 @@ function CarPage({ car }: { car: Car }) {
                     </tr>
                   ))}
                   <tr>
-                    <th scope="row" className="bg-surface/60 px-4 py-3 text-left font-medium text-muted">
+                    <th scope="row" className="bg-canvas px-4 py-3 text-left font-medium text-muted">
                       Security deposit
                     </th>
                     <td className="px-4 py-3 text-right font-semibold">{car.deposit != null ? formatAED(car.deposit) : "On request"}</td>
                   </tr>
                   <tr>
-                    <th scope="row" className="bg-surface/60 px-4 py-3 text-left font-medium text-muted">
+                    <th scope="row" className="bg-canvas px-4 py-3 text-left font-medium text-muted">
                       Minimum rental
                     </th>
                     <td className="px-4 py-3 text-right font-semibold">
@@ -201,7 +201,7 @@ function CarPage({ car }: { car: Car }) {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row" className="bg-surface/60 px-4 py-3 text-left font-medium text-muted">
+                    <th scope="row" className="bg-canvas px-4 py-3 text-left font-medium text-muted">
                       Mileage
                     </th>
                     <td className="px-4 py-3 text-right font-semibold">
@@ -227,7 +227,7 @@ function CarPage({ car }: { car: Car }) {
             </div>
           </section>
 
-          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <div data-reveal-stagger className="mt-6 grid gap-6 sm:grid-cols-2">
             <section className="rounded-2xl border border-line p-5" aria-labelledby="features">
               <h2 id="features" className="flex items-center gap-2 font-bold">
                 <Gauge className="size-4 text-brand-600" aria-hidden /> Features
@@ -284,7 +284,7 @@ function CarPage({ car }: { car: Car }) {
         <h2 id="related" className="h-section">
           You may also like
         </h2>
-        <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul data-reveal-stagger className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {related.map((c) => (
             <li key={c.slug}>
               <CarCard car={c} />

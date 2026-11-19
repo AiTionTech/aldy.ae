@@ -12,7 +12,7 @@ export type NavCategory = { href: string; title: string; text: string; img: stri
 const isActive = (pathname: string, href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
 /**
- * Desktop navigation (right-aligned): current page underlined in coral, a soft pill that slides behind
+ * Desktop navigation (right-aligned): current page underlined in orange, a soft pill that slides behind
  * the hovered/focused link, and a "Cars" drop-down that opens on hover and keyboard focus.
  * `onDark` = header is transparent over the dark home-page video.
  */
@@ -41,7 +41,7 @@ export default function NavLinks({ categories, onDark }: { categories: NavCatego
           const active = isActive(pathname, n.href);
           const cls = cn(
             "relative flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold transition-[color,transform] duration-200 hover:-translate-y-px",
-            "after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-brand-500 after:transition-transform",
+            "after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-accent-500 after:transition-transform",
             active ? "after:scale-x-100" : "after:scale-x-0",
             onDark ? (active ? "text-white" : "text-white/80 hover:text-white") : active ? "text-brand-700" : "text-ink/75 hover:text-ink",
           );
@@ -59,13 +59,13 @@ export default function NavLinks({ categories, onDark }: { categories: NavCatego
                 {n.label}
                 <ChevronDown className="size-3.5 transition-transform group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden />
               </Link>
-              {/* drop-down (aligned left so it never runs off the screen edge) */}
-              <div className="invisible absolute top-full left-0 z-50 w-[30rem] pt-3 opacity-0 transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+              {/* drop-down, centred under "Cars" (left-aligned ran past the right edge and caused a sideways scroll) */}
+              <div className="invisible absolute top-full left-1/2 z-50 w-[30rem] -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
                 <div className="rounded-3xl border border-line bg-white p-3 text-ink shadow-lift">
                   <ul className="grid grid-cols-2 gap-2">
                     {categories.map((c) => (
                       <li key={c.href}>
-                        <Link href={c.href} className="group/item block overflow-hidden rounded-2xl bg-surface transition hover:bg-brand-50">
+                        <Link href={c.href} className="group/item block overflow-hidden rounded-2xl bg-canvas transition hover:bg-brand-50">
                           <span className="block aspect-[16/9] overflow-hidden bg-sand">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={c.img} alt="" width={200} height={113} loading="lazy" className="size-full object-cover transition-transform duration-300 group-hover/item:scale-105" />

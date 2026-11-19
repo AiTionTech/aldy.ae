@@ -3,7 +3,6 @@ import { team } from "@/content/team";
 import { site } from "@/lib/site";
 import { LinkedInIcon } from "./icons";
 import { SectionHeading } from "./common";
-import { Reveal } from "./ui/car-motion";
 
 type Photo = { src: string; thumb: string; w: number; h: number };
 const photos = (manifest as { team?: Record<string, Photo> }).team ?? {};
@@ -24,14 +23,14 @@ export default function TeamSection() {
       <div id="team-title">
         <SectionHeading eyebrow="Our team" title="Meet the people behind Aldy" intro="Talk to the team that runs Aldy Rent A Car day to day." />
       </div>
-      <Reveal as="ul" className={`mt-10 grid gap-6 ${team.length > 1 ? "sm:grid-cols-2" : ""} ${team.length > 2 ? "lg:grid-cols-3" : "max-w-4xl"}`}>
+      <ul data-reveal-stagger className={`mt-10 grid gap-6 ${team.length > 1 ? "sm:grid-cols-2" : ""} ${team.length > 2 ? "lg:grid-cols-3" : "max-w-4xl"}`}>
         {team.map((m, i) => {
           const photo = photos[m.slug];
           return (
-            <li key={m.slug} data-reveal className="flex flex-col items-center rounded-[2rem] border border-line bg-white p-7 text-center shadow-card sm:flex-row sm:items-center sm:gap-6 sm:text-left">
+            <li key={m.slug} className="flex flex-col items-center rounded-[2rem] border border-line bg-white p-7 text-center shadow-card sm:flex-row sm:items-center sm:gap-6 sm:text-left">
               <div className="relative shrink-0">
                 {/* tilted pastel backplate (theme accent) */}
-                <span className={`absolute inset-0 rounded-[2rem] ${i % 2 ? "-rotate-6 bg-sea-100" : "rotate-6 bg-brand-100"}`} aria-hidden />
+                <span className={`absolute inset-0 rounded-[2rem] ${i % 2 ? "-rotate-6" : "rotate-6"} bg-brand-100`} aria-hidden />
                 {photo ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
@@ -45,7 +44,7 @@ export default function TeamSection() {
                     className="relative size-36 rounded-[2rem] object-cover sm:size-40"
                   />
                 ) : (
-                  <span className="relative grid size-36 place-items-center rounded-[2rem] bg-surface font-display text-4xl font-bold text-brand-700 sm:size-40" aria-hidden>
+                  <span className="relative grid size-36 place-items-center rounded-[2rem] bg-canvas font-display text-4xl font-bold text-brand-700 sm:size-40" aria-hidden>
                     {initials(m.name)}
                   </span>
                 )}
@@ -69,7 +68,7 @@ export default function TeamSection() {
             </li>
           );
         })}
-      </Reveal>
+      </ul>
     </section>
   );
 }

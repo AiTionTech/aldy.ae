@@ -42,7 +42,7 @@ export default function TermsPage() {
           <li>Each rental includes {site.kmRule}. Extra kilometres are charged at the rate shown on the car page.</li>
         </ul>
 
-        <h2>Changes and cancellations</h2>
+        <h2 id="changes-and-cancellations" className="scroll-mt-24">Changes and cancellations</h2>
         <ul>
           <li>Once a rental has been paid it cannot be cancelled or refunded.</li>
           <li>You may ask to change the dates of a confirmed booking by contacting our team. Changes are subject to availability and conditions apply.</li>

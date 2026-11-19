@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyContactBar from "@/components/StickyContactBar";
+import ScrollReveal, { revealBootScript } from "@/components/ScrollReveal";
 import { site } from "@/lib/site";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
@@ -19,15 +20,19 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fdfaf5",
+  themeColor: "#2b2d31",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${bricolage.variable}`}>
-      <body className="flex min-h-dvh flex-col font-sans">
+    // suppressHydrationWarning: the inline script below adds the "reveal" class before React hydrates
+    <html lang="en" className={`${jakarta.variable} ${bricolage.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: revealBootScript }} />
+      </head>
+      <body className="flex min-h-dvh flex-col overflow-x-clip font-sans">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-white">
           Skip to content
         </a>
@@ -37,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </main>
         <Footer />
         <StickyContactBar />
+        <ScrollReveal />
       </body>
     </html>
   );

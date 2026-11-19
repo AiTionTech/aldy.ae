@@ -71,7 +71,7 @@ export default function BookingWidget({ carName, year, carPath, price, minDays, 
     <div className="rounded-3xl border border-line bg-white p-5 shadow-card sm:p-6">
       <div className="flex items-baseline justify-between gap-2">
         <p>
-          <span className="text-2xl font-bold">{formatAED(price.day)}</span>
+          <span className="text-2xl font-bold text-accent-700">{formatAED(price.day)}</span>
           <span className="text-sm text-muted"> / day</span>
         </p>
         <p className="text-xs text-muted">
@@ -131,12 +131,12 @@ export default function BookingWidget({ carName, year, carPath, price, minDays, 
               <Info className="mt-0.5 size-4 shrink-0" aria-hidden /> {error}
             </p>
           ) : estimate ? (
-            <div className="rounded-2xl bg-surface p-4">
+            <div className="rounded-2xl bg-canvas p-4">
               <div className="flex items-center justify-between text-sm">
                 <span className="flex items-center gap-2 text-muted">
                   <CalendarDays className="size-4" aria-hidden /> {days} {days === 1 ? "day" : "days"}
                 </span>
-                <span className="text-lg font-bold">{estimate.kind === "price" ? formatAED(estimate.total) : "Ask for price"}</span>
+                <span className="text-lg font-bold text-accent-700">{estimate.kind === "price" ? formatAED(estimate.total) : "Ask for price"}</span>
               </div>
               <p className="mt-1 text-xs text-muted">
                 {estimate.kind === "price"

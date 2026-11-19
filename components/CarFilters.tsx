@@ -69,7 +69,7 @@ export default function CarFilters({ cars, makes }: { cars: CardCar[]; makes: st
       <div className="sticky top-16 z-20 -mx-4 border-b border-line bg-canvas/95 px-4 py-3 sm:mx-0 sm:rounded-2xl sm:border sm:px-4">
         <div className="flex flex-wrap items-center gap-2">
           <SlidersHorizontal className="hidden size-4 text-muted sm:block" aria-hidden />
-          <div role="group" aria-label="Category" className="flex rounded-full bg-surface p-1">
+          <div role="group" aria-label="Category" className="flex rounded-full bg-canvas p-1">
             {(
               [
                 ["", "All"],

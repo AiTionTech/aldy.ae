@@ -27,17 +27,19 @@ export const site = {
     instagram: "https://www.instagram.com/aldyrentacar/",
     youtube: "https://youtube.com/@AldyRentACar",
     linkedin: "https://www.linkedin.com/company/aldy-rent-a-car/",
+    // TODO: add `x` and `tiktok` URLs here if Aldy has these accounts – the footer shows every entry automatically
   },
   // Mileage rule shown everywhere (old site also showed "4500 km / month" – awaiting confirmation)
   kmRule: "250 km per day",
   minAge: 23,
 } as const;
 
+// Main menu (user choice 19 Nov 2026): Locations is left out because the booking form already has the area
+// picker, and Blog moved to the footer. Both pages stay live and are linked from the footer.
 export const nav = [
+  { href: "/", label: "Home" },
   { href: "/cars/", label: "Cars" },
-  { href: "/locations/", label: "Locations" },
   { href: "/faq/", label: "FAQ" },
-  { href: "/blog/", label: "Blog" },
   { href: "/about/", label: "About" },
   { href: "/contact/", label: "Contact" },
 ] as const;

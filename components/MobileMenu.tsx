@@ -21,7 +21,7 @@ export default function MobileMenu({ categories }: { categories: NavCategory[] }
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  const links = [{ href: "/", label: "Home" }, ...nav];
+  const links = nav; // nav already starts with Home
   const active = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
@@ -29,19 +29,19 @@ export default function MobileMenu({ categories }: { categories: NavCategory[] }
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="grid size-11 place-items-center rounded-full bg-brand-50 text-brand-700 transition-colors hover:bg-brand-100"
+        className="-mr-2 grid size-11 place-items-center text-white transition-opacity hover:opacity-80"
         aria-label="Open menu"
         aria-expanded={open}
         aria-controls="mobile-menu"
       >
-        <Menu className="size-5" />
+        <Menu className="size-7" strokeWidth={2} />
       </button>
 
       {open && (
         <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" className="fixed inset-0 z-50">
           <button className="animate-[fade-in_.2s_ease-out] absolute inset-0 bg-ink/25" aria-label="Close menu" onClick={() => setOpen(false)} />
           <div
-            className="animate-[slide-in_.28s_cubic-bezier(.2,.8,.2,1)] bg-glow absolute inset-y-2 right-2 flex w-[min(22rem,calc(100vw-1rem))] flex-col overflow-y-auto rounded-[2rem] border border-line bg-canvas p-5 shadow-lift"
+            className="animate-[slide-in_.28s_cubic-bezier(.2,.8,.2,1)] absolute inset-y-2 right-2 flex w-[min(22rem,calc(100vw-1rem))] flex-col overflow-y-auto rounded-[2rem] border border-line bg-canvas p-5 shadow-lift"
             onClick={(e) => (e.target as HTMLElement).closest("a") && setOpen(false)}
           >
             <div className="flex items-center justify-between">
@@ -53,17 +53,17 @@ export default function MobileMenu({ categories }: { categories: NavCategory[] }
 
             <nav aria-label="Mobile" className="mt-4">
               <ul className="space-y-1">
-                {links.map((n) => {
+                {links.map((n, i) => {
                   const Icon = ICONS[n.href] ?? ChevronRight;
                   const on = active(n.href);
                   return (
-                    <li key={n.href}>
+                    <li key={n.href} className="menu-item-in" style={{ "--i": i } as React.CSSProperties}>
                       <Link
                         href={n.href}
                         aria-current={on ? "page" : undefined}
-                        className={`flex items-center gap-3 rounded-2xl px-3 py-2 text-base font-semibold transition-colors ${on ? "bg-white text-brand-700 shadow-card" : "hover:bg-white/70"}`}
+                        className={`flex items-center gap-3 rounded-2xl px-3 py-2 text-base font-semibold transition-colors ${on ? "bg-white text-brand-700 shadow-card" : "hover:bg-white"}`}
                       >
-                        <span className={`grid size-9 place-items-center rounded-xl ${on ? "bg-brand-50 text-brand-600" : "bg-white text-ink/70"}`}>
+                        <span className={`grid size-9 place-items-center rounded-xl ${on ? "bg-accent-500 text-brand-700" : "bg-white text-ink/70"}`}>
                           <Icon className="size-4" aria-hidden />
                         </span>
                         {n.label}

@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 /*
-  "Desert sunrise" theme – warm, light and distinctly Dubai.
-  ivory page · sand surfaces · terracotta-coral accent · sea-teal secondary · soft sun gradients.
-  Text stays a warm charcoal for readability; there are no dark sections.
+  Grey theme (user palette, 19 Nov 2026) – calm neutrals, charcoal header, dark footer.
+  ONE accent: sand/peach #FDA57C, used sparingly (primary "Book" buttons, prices, hover states).
+  Contrast rules: accent FILLS carry dark text (#1E1F22) – white on #FDA57C fails AA;
+  accent TEXT on light backgrounds uses accent-700 (#B8461E). `muted` is darkened from #8A8F98 so it passes AA on the page grey.
 */
 @theme {
   /* motion: one easing curve for every transition (from the landing-page-design skill) */
@@ -14,54 +15,61 @@
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-bricolage), var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 
-  /* neutrals (warm) */
-  --color-ink: #24201b;
-  --color-muted: #6b6257;
-  --color-line: #ece3d6;
-  --color-canvas: #fdfaf5;
-  --color-surface: #f7f0e6;
-  --color-sand: #efe3d0;
+  /* neutrals */
+  --color-ink: #3f4248; /* headings + body text */
+  --color-muted: #6b7079; /* secondary text (AA on #F4F5F7) */
+  --color-line: #d9dce1; /* borders, dividers */
+  --color-canvas: #f4f5f7; /* page background */
+  --color-surface: #ffffff; /* cards, panels */
+  --color-sand: #e6e8ec; /* image placeholders */
+  --color-charcoal: #2b2d31; /* header */
 
-  /* primary – terracotta / sunset coral (600+ pass AA with white text and on ivory) */
-  --color-brand-50: #fff4ed;
-  --color-brand-100: #ffe4d4;
-  --color-brand-200: #ffc8a9;
-  --color-brand-300: #fda57c;
-  --color-brand-500: #e9683a;
-  --color-brand-600: #b8461e;
-  --color-brand-700: #963918;
+  /* "brand" = neutral grey/charcoal scale (icons, eyebrows, secondary buttons, active states) */
+  --color-brand-50: #eef0f2;
+  --color-brand-100: #e2e4e8;
+  --color-brand-200: #c9cdd3;
+  --color-brand-300: #a9aeb6;
+  --color-brand-500: #5a5e66;
+  --color-brand-600: #2b2d31;
+  --color-brand-700: #1e1f22;
 
-  /* secondary – Arabian Gulf teal */
-  --color-sea-50: #eef8f6;
-  --color-sea-100: #d5efea;
-  --color-sea-200: #a9ddd4;
-  --color-sea-600: #0f766e;
-  --color-sea-700: #0b5d57;
+  /* the one accent – sand / peach (the earlier "delivered to you" colour, user choice 19 Nov 2026) */
+  --color-accent-50: #fff4ed;
+  --color-accent-500: #fda57c; /* fills (with dark text), stars, underlines, highlight on the dark hero */
+  --color-accent-600: #fb9466; /* hover */
+  --color-accent-700: #b8461e; /* accent TEXT on light backgrounds (prices, links) – AA on white */
 
-  /* sun gradient stops */
-  --color-sun-1: #ffe7c2;
-  --color-sun-2: #ffc9a3;
+  /* footer */
+  --color-footer-bg: #1e1f22;
+  --color-footer-bottom: #17181a;
+  --color-footer-text: #b5bac1;
+  --color-footer-muted: #8a8f98;
+  --color-footer-line: #3f4248;
 
   /* WhatsApp green, darkened for AA contrast with white text */
   --color-wa: #0f7a40;
   --color-wa-dark: #0b6532;
 
   /* shadcn/ui tokens (components/ui/*) mapped to the theme – light only, no dark mode */
-  --color-background: #fdfaf5;
-  --color-foreground: #24201b;
-  --color-primary: #b8461e;
+  --color-background: #f4f5f7;
+  --color-foreground: #3f4248;
+  --color-primary: #2b2d31;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #f7f0e6;
-  --color-secondary-foreground: #24201b;
-  --color-accent: #fff4ed;
-  --color-accent-foreground: #963918;
+  --color-secondary: #eef0f2;
+  --color-secondary-foreground: #3f4248;
+  --color-accent: #eef0f2;
+  --color-accent-foreground: #1e1f22;
   --color-destructive: #b91c1c;
   --color-destructive-foreground: #ffffff;
-  --color-input: #ece3d6;
-  --color-ring: #e9683a;
+  --color-input: #d9dce1;
+  --color-ring: #fda57c;
+  --color-border: #d9dce1;
+  --color-card: #ffffff;
+  --color-card-foreground: #3f4248;
+  --color-muted-foreground: #6b7079;
 
-  --shadow-card: 0 1px 2px rgb(92 60 30 / 0.05), 0 10px 28px -14px rgb(92 60 30 / 0.18);
-  --shadow-lift: 0 2px 6px rgb(92 60 30 / 0.06), 0 24px 48px -20px rgb(92 60 30 / 0.28);
+  --shadow-card: 0 1px 2px rgb(17 18 20 / 0.05), 0 10px 28px -14px rgb(17 18 20 / 0.16);
+  --shadow-lift: 0 2px 6px rgb(17 18 20 / 0.06), 0 24px 48px -20px rgb(17 18 20 / 0.26);
 }
 
 @layer base {
@@ -84,10 +92,10 @@
     text-wrap: pretty;
   }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-500;
+    @apply outline-2 outline-offset-2 outline-brand-600;
   }
   ::selection {
-    @apply bg-brand-100;
+    @apply bg-accent-50;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
@@ -96,43 +104,40 @@
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-[color,background-color,border-color,transform] duration-300 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
-/* soft sun behind hero imagery – radial gradients only (no blur filters: they are expensive on mobile) */
-@utility bg-sun {
-  background-image: radial-gradient(circle at 50% 50%, var(--color-sun-1) 0%, var(--color-sun-2) 55%, rgb(255 201 163 / 0) 71%);
-}
+/* very faint neutral light for page headers – radial gradient only (no blur filters: expensive on mobile) */
 @utility bg-glow {
-  background-image:
-    radial-gradient(60% 80% at 100% 0%, rgb(255 201 163 / 0.45), transparent 70%),
-    radial-gradient(50% 60% at 0% 100%, rgb(169 221 212 / 0.35), transparent 70%);
+  background-image: radial-gradient(60% 90% at 100% 0%, rgb(255 255 255 / 0.9), transparent 70%);
 }
 
 @layer components {
   .container-x {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
+  /* primary call to action (Book / Browse cars): sand/peach accent with DARK text for AA contrast */
   .btn-primary {
-    @apply btn bg-brand-600 text-white shadow-[0_8px_20px_-8px_rgb(184_70_30/0.6)] hover:bg-brand-700;
+    @apply btn bg-accent-500 text-brand-700 shadow-[0_8px_20px_-10px_rgb(253_165_124/0.8)] hover:-translate-y-px hover:bg-accent-600;
   }
+  /* secondary solid button: charcoal */
   .btn-brand {
-    @apply btn bg-brand-600 text-white shadow-[0_8px_20px_-8px_rgb(184_70_30/0.6)] hover:bg-brand-700;
+    @apply btn bg-brand-600 text-white hover:-translate-y-px hover:bg-brand-700;
   }
   .btn-wa {
-    @apply btn bg-wa text-white hover:bg-wa-dark;
+    @apply btn bg-wa text-white hover:-translate-y-px hover:bg-wa-dark;
   }
   .btn-ghost {
-    @apply btn border border-line bg-white text-ink hover:border-brand-300 hover:bg-brand-50;
+    @apply btn border border-line bg-white text-ink hover:-translate-y-px hover:border-brand-300 hover:bg-brand-50;
   }
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-brand-600 uppercase before:h-px before:w-6 before:bg-brand-300;
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-brand-500 uppercase before:h-px before:w-6 before:bg-accent-500;
   }
   .h-section {
     @apply text-3xl font-bold tracking-tight text-balance sm:text-4xl;
   }
   .field {
-    @apply block w-full rounded-xl border border-line bg-white px-3.5 py-3 text-sm text-ink placeholder:text-muted/70 focus:border-brand-300 focus:ring-2 focus:ring-brand-100 focus:outline-none;
+    @apply block w-full rounded-xl border border-line bg-white px-3.5 py-3 text-sm text-ink placeholder:text-muted/70 focus:border-brand-500 focus:ring-2 focus:ring-accent-500/30 focus:outline-none;
   }
   .label {
     @apply mb-1.5 block text-xs font-semibold text-muted;
@@ -153,10 +158,10 @@
     @apply mb-4;
   }
   .prose-aldy ul {
-    @apply mb-5 list-disc space-y-1.5 pl-5 marker:text-brand-500;
+    @apply mb-5 list-disc space-y-1.5 pl-5 marker:text-accent-500;
   }
   .prose-aldy a {
-    @apply font-medium text-brand-600 underline decoration-brand-200 underline-offset-2 hover:decoration-brand-600;
+    @apply font-medium text-accent-700 underline decoration-accent-500/50 underline-offset-2 hover:decoration-accent-500;
   }
 }
 
@@ -180,6 +185,74 @@
     opacity: 0;
   }
 }
+/*
+  Scroll reveals (landing-page-design B7): elements rise 32 px and fade in once, on the base curve.
+  Hidden ONLY when <html> has .reveal (set by an inline script when JS runs and motion is allowed),
+  so no-JS visitors, crawlers and reduced-motion users always see everything.
+  [data-reveal-stagger] parents: children reveal one after another (components/ScrollReveal.tsx sets --i).
+*/
+.reveal [data-reveal]:not(.is-in),
+.reveal [data-reveal-stagger]:not(.is-in) > * {
+  opacity: 0;
+  transform: translateY(32px);
+}
+.reveal [data-reveal],
+.reveal [data-reveal-stagger] > * {
+  transition:
+    opacity 700ms var(--ease-smooth),
+    transform 700ms var(--ease-smooth);
+  transition-delay: calc(min(var(--i, 0), 5) * 80ms);
+}
+/* a line that draws itself (e.g. the dashed line behind the "how it works" steps) */
+.reveal [data-reveal-line] {
+  transform-origin: left;
+  transition: transform 1000ms var(--ease-smooth) 200ms;
+}
+.reveal [data-reveal-line]:not(.is-in) {
+  transform: scaleX(0);
+}
+/* vertical version (draws top to bottom) */
+.reveal [data-reveal-line][data-vertical] {
+  transform-origin: top;
+}
+.reveal [data-reveal-line][data-vertical]:not(.is-in) {
+  transform: scaleY(0);
+}
+
+/* hero entrance: headline moves only (keeps LCP), subtitle + buttons rise and fade in after it */
+@keyframes rise {
+  from {
+    transform: translateY(28px);
+  }
+}
+@keyframes rise-fade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+.hero-in-1 {
+  animation: rise 900ms var(--ease-smooth) both;
+}
+.hero-in-2 {
+  animation: rise-fade 800ms var(--ease-smooth) 150ms both;
+}
+.hero-in-3 {
+  animation: rise-fade 800ms var(--ease-smooth) 300ms both;
+}
+
+/* mobile menu links arrive one after another (60 ms step, max 400 ms) */
+@keyframes menu-item {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+.menu-item-in {
+  animation: menu-item 500ms var(--ease-smooth) both;
+  animation-delay: calc(min(var(--i, 0) * 60ms, 400ms));
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

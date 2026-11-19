@@ -75,7 +75,7 @@ export default function VideoHero({
   }, [mounted]);
 
   return (
-    <section ref={root} className={cn("relative isolate -mt-16 overflow-hidden bg-ink pt-16 text-white", className)}>
+    <section ref={root} data-hero className={cn("relative isolate -mt-16 overflow-hidden bg-ink pt-16 text-white", className)}>
       {/* background: poster (LCP) + optional video */}
       <div className="absolute inset-0 -z-10" aria-hidden>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -108,7 +108,7 @@ export default function VideoHero({
         )}
         {/* dark overlay for white text (user choice: like alfareedbm.com) */}
         <div className="absolute inset-0 bg-ink/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgb(36_32_27/0.45),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgb(17_18_20/0.45),transparent_70%)]" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/70 to-transparent" />
       </div>
 

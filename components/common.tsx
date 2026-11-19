@@ -57,12 +57,12 @@ export function PageHeader({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="bg-glow relative overflow-hidden border-b border-line">
+    <section className="relative overflow-hidden border-b border-line bg-white">
       <div className="container-x py-10 sm:py-14">
         <Breadcrumbs items={crumbs} />
-        {eyebrow && <p className="eyebrow mt-6">{eyebrow}</p>}
-        <h1 className={`${eyebrow ? "mt-2" : "mt-6"} max-w-3xl text-3xl font-bold tracking-tight text-balance sm:text-5xl`}>{title}</h1>
-        {intro && <div className="mt-4 max-w-2xl text-base leading-7 text-muted sm:text-lg">{intro}</div>}
+        {eyebrow && <p className="hero-in-2 eyebrow mt-6">{eyebrow}</p>}
+        <h1 className={`hero-in-1 ${eyebrow ? "mt-2" : "mt-6"} max-w-3xl text-3xl font-bold tracking-tight text-balance sm:text-5xl`}>{title}</h1>
+        {intro && <div className="hero-in-3 mt-4 max-w-2xl text-base leading-7 text-muted sm:text-lg">{intro}</div>}
         {children}
       </div>
     </section>
@@ -71,7 +71,7 @@ export function PageHeader({
 
 export function SectionHeading({ eyebrow, title, intro, action }: { eyebrow?: string; title: string; intro?: string; action?: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+    <div data-reveal className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <div className="max-w-2xl">
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         <h2 className="h-section mt-2">{title}</h2>

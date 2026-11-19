@@ -170,7 +170,7 @@ export function GlobeWireframe({
   backgroundColor,
   mapUrl = "/geo/countries-110m.json",
   markers = [],
-  markerColor = "var(--color-brand-500)",
+  markerColor = "var(--color-accent-500)",
 }: GlobeWireframeProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -675,7 +675,7 @@ export default function ContactWithGlobe({
                 ))}
               </div>
 
-              <div className="relative h-56 overflow-hidden text-sea-600">
+              <div className="relative h-56 overflow-hidden text-brand-500">
                 <GlobeWireframe
                   className="absolute top-0 left-0 aspect-square w-full max-w-full"
                   variant="wireframesolid"

@@ -1,14 +1,16 @@
 import { Plus } from "lucide-react";
 import type { Faq } from "@/content/faqs";
+import FaqGroup from "./FaqGroup";
 
-export default function FaqList({ items }: { items: Faq[] }) {
+/** Accordion: opening one question closes the others (shared `name` + FaqGroup fallback) */
+export default function FaqList({ items, group = "faq" }: { items: Faq[]; group?: string }) {
   return (
-    <div className="divide-y divide-line rounded-3xl border border-line bg-white">
+    <FaqGroup className="divide-y divide-line rounded-3xl border border-line bg-white">
       {items.map((f) => (
-        <details key={f.slug} id={f.slug} className="group scroll-mt-24 px-5 sm:px-6">
+        <details key={f.slug} id={f.slug} name={group} className="group scroll-mt-24 px-5 sm:px-6">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold [&::-webkit-details-marker]:hidden">
             <h3 className="text-base">{f.question}</h3>
-            <Plus className="size-5 shrink-0 text-muted transition-transform group-open:rotate-45" aria-hidden />
+            <Plus className="size-5 shrink-0 text-muted transition-transform duration-300 group-open:rotate-45 group-open:text-accent-700" aria-hidden />
           </summary>
           <div className="prose-aldy pb-5 text-muted">
             {f.answer.map((b, i) =>
@@ -29,6 +31,6 @@ export default function FaqList({ items }: { items: Faq[] }) {
           </div>
         </details>
       ))}
-    </div>
+    </FaqGroup>
   );
 }

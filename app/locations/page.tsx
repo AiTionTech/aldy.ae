@@ -28,7 +28,7 @@ export default function LocationsPage() {
                 {group === "Airports" ? <Plane className="size-5 text-brand-600" aria-hidden /> : <MapPin className="size-5 text-brand-600" aria-hidden />}
                 {group}
               </h2>
-              <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <ul data-reveal-stagger className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((l) => (
                   <li key={l.slug}>
                     <Link href={locationPath(l)} className="group block h-full rounded-2xl border border-line p-4 transition hover:border-brand-300 hover:bg-brand-50/40 hover:shadow-card">
